@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import api from "../services/api"
 
+import Grafico from "./Grafico";
+
 //Dashboard onde serão exibidas as pesquisas
 const Painel = () => {
     const [user, setUser] = useState([]);
@@ -13,14 +15,25 @@ const Painel = () => {
             .catch((err) => {
                 console.error("ops! ocorreu um erro" + err);
             });
-    }, []);
+    }, []); 
 
     return (
+        <div>
         <ul>
             {user.map(({ name, id }) => (
                 <li key={id}>{name}</li>
             ))}
         </ul>
+        <ul>
+            <h4>Pesquisas Realizadas</h4>
+            <li>Pesquisa Docentes 2022-1</li>
+            <li>Pesquisa Docentes 2022-2</li>
+            <li>Pesquisa Infraestrutura UFG 2022</li>
+        </ul>
+        
+        <Grafico/>
+
+        </div>
     );
 }
 
