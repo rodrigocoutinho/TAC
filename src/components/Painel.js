@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import api from "../services/api"
-
+//Importa o componente grafico criado no arquivo Grafico.js
 import Grafico from "./Grafico";
 
 //Dashboard onde serão exibidas as pesquisas
@@ -18,19 +18,22 @@ const Painel = () => {
     }, []); 
 
     return (
+        //container html
         <div>
+        {/*Lista que recupera nome de usuário logado*/}
         <ul>
             {user.map(({ name, id }) => (
                 <li key={id}>{name}</li>
             ))}
         </ul>
+        {/*Lista estática de pesquisas realizadas(futuramente servirá para pesquisas realmente realizadas).*/}
         <ul>
             <h4>Pesquisas Realizadas</h4>
             <li>Pesquisa Docentes 2022-1</li>
             <li>Pesquisa Docentes 2022-2</li>
             <li>Pesquisa Infraestrutura UFG 2022</li>
         </ul>
-        
+        {/*Chamada do componente Grafico*/}
         <Grafico/>
 
         </div>
