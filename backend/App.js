@@ -32,8 +32,29 @@ App.get("/api/users", async (req, res) => {
 //Metodo post para gravação dos dados enviados da requisição para o banco.
 App.post("/api/register", async (req, res) => {
     //console.log(req.body); imprime o que foi recebido no body da requisição.
-    const email = req.body.email
-    const senha = req.body.password;
+    const { name, fone, tipo, email, password } = req.body;
+
+    // valida para não deixar passar com dados em branco
+    if (!name) {
+        return res.status(422).json({ mensagem: "O nome é obrigatório!" });
+    }
+
+    if (!fone) {
+        return res.status(422).json({ mensagem: "O telefone é obrigatório!" });
+    }
+
+    if (!tipo) {
+        return res.status(422).json({ mensagem: "O Tipo de usuário é obrigatório!" });
+    }
+
+    if (!email) {
+        return res.status(422).json({ mensagem: "O email é obrigatório!" });
+    }
+
+    if (!password) {
+        return res.status(422).json({ mensagem: "A senha é obrigatória!" });
+    }
+
 
     const verifica = await User.findAll({
         where: {
@@ -42,15 +63,15 @@ App.post("/api/register", async (req, res) => {
     });
 
     if (verifica == 0) {
-        bcrypt.hash(senha, saltRounds, async function (err, hash) {
+        bcrypt.hash(password, saltRounds, async function (err, hash) {
             if (err) {
                 console.log(err)
             }
             await User.create({
-                name: req.body.name,
-                fone: req.body.fone,
-                tipo: req.body.tipo,
-                email: req.body.email,
+                name: name,
+                fone: fone,
+                tipo: tipo,
+                email: email,
                 password: hash
             }
             ).then(() => {
@@ -81,19 +102,19 @@ App.post("/api/login", async (req, res) => {
             email: email,
         }
     });
-    if (verifica.length>0){
+    if (verifica.length > 0) {
         bcrypt.compare(senha, verifica[0].password, function (error, response) {
             if (error) {
                 res.send(error)
             }
-            if(response){
-                res.send({mensagem: "Usuario Logado"})
-            }else{
-                res.send({mensagem: "Usuário ou senha incorreta"})
+            if (response) {
+                res.send({ mensagem: "Usuario Logado" })
+            } else {
+                res.send({ mensagem: "Usuário ou senha incorreta" })
             }
         });
-    }else{
-        res.send({mensagem: "Não registrado"})
+    } else {
+        res.send({ mensagem: "Não registrado" })
     }
 });
 

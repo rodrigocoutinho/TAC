@@ -24,11 +24,11 @@ export default function Register() {
         //Envio dos dados para api
         const response = await api.post('http://localhost:8080/api/register', data);
 
-        if (response.status === 200) {
+        if (response.status == 200) {
             //window.location.href='/login'
-            console.log("Erro")
+            alert(response.data.mensagem);
         } else {
-            alert('Erro ao cadastrar o usuário!')
+            alert(response.data.mensagem);
         }
     }
 
@@ -111,7 +111,7 @@ export default function Register() {
                 onClick={handleSubmit}>
                 Sign Up</button>
             <p className="forgot-password text-right">
-                Already registered <a href="/sign-in">sign in?</a>
+                Already registered <a href="/login">sign in?</a>
             </p>
         </form>
     );
