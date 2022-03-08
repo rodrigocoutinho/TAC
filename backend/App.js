@@ -62,7 +62,7 @@ App.post("/api/register", async (req, res) => {
         }
     });
 
-    if (verifica == 0) {
+    if (verifica === 0) {
         bcrypt.hash(password, saltRounds, async function (err, hash) {
             if (err) {
                 console.log(err)
@@ -84,7 +84,7 @@ App.post("/api/register", async (req, res) => {
 
 
     } else {
-        res.status(401).json({
+        res.json({
             erro: true,
             mensagem: "Usuário já é cadastrado."
         })
@@ -97,24 +97,24 @@ App.post("/api/login", async (req, res) => {
     const email = req.body.email
     const senha = req.body.password;
 
+    //busca inicialmente o email cadastrado
     const verifica = await User.findAll({
         where: {
             email: email,
         }
     });
+    //Se o email for encontrado, compara o hash do usuario para liberar o acesso.
     if (verifica.length > 0) {
         bcrypt.compare(senha, verifica[0].password, function (error, response) {
             if (error) {
                 res.send(error)
             }
             if (response) {
-                res.send({ mensagem: "Usuario Logado" })
-            } else {
-                res.send({ mensagem: "Usuário ou senha incorreta" })
+                res.status(201).send({ mensagem: "Usuario Logado" })
             }
         });
     } else {
-        res.send({ mensagem: "Não registrado" })
+        res.send({ mensagem: "Usuário ou senha incorreta" })
     }
 });
 

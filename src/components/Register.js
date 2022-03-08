@@ -10,6 +10,8 @@ export default function Register() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
+    const [status, setStatus] = useState('');
+
     //Função que define os dados do formuário e envia os dados para o backend
     async function handleSubmit() {
         const data = {
@@ -24,17 +26,32 @@ export default function Register() {
         //Envio dos dados para api
         const response = await api.post('http://localhost:8080/api/register', data);
 
-        if (response.status == 200) {
-            //window.location.href='/login'
+        if (response.status === 201) {
+
             alert(response.data.mensagem);
+            //Limpa os dados do formulário
+            setName('');
+            setFone('');
+            setTipo('');
+            setEmail('');
+            setPassword('');
+
+            // envia para pagina de login
+            window.location.href = '/login'
         } else {
             alert(response.data.mensagem);
         }
+        setStatus(response.data.mensagem);
+
+    }
+
+    function onSubmit(ev) {
+        ev.preventDefault();
     }
 
 
     return (
-        <form >
+        <form onSubmit={onSubmit} >
             <h3>Register</h3>
             <div className="form-group">
                 <label>Full name</label>
@@ -113,6 +130,7 @@ export default function Register() {
             <p className="forgot-password text-right">
                 Already registered <a href="/login">sign in?</a>
             </p>
+            {status === "Usuário já é cadastrado." ? <p style={{ color: "#ff0000" }}>{status}</p> : ""}
         </form>
     );
 }
