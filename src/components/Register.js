@@ -6,11 +6,11 @@ export default function Register() {
 
     const [name, setName] = useState('');
     const [fone, setFone] = useState('');
-    const [tipo, setTipo] = useState('');
+    const [tipo, setTipo] = useState('Usuario');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    const [status, setStatus] = useState('');
+    const [error, setError] = useState('');
 
     //Função que define os dados do formuário e envia os dados para o backend
     async function handleSubmit() {
@@ -22,11 +22,11 @@ export default function Register() {
             password: password
         }
 
-        console.log(data)
-        //Envio dos dados para api
-        const response = await api.post('http://localhost:8080/api/register', data);
+        //console.log(data)
 
-        if (response.status === 201) {
+        try {
+            //Envio dos dados para api
+            const response = await api.post('http://localhost:8080/api/register', data);
 
             alert(response.data.mensagem);
             //Limpa os dados do formulário
@@ -36,13 +36,15 @@ export default function Register() {
             setEmail('');
             setPassword('');
 
+            setError(response.data.mensagem);
+
             // envia para pagina de login
             window.location.href = '/login'
-        } else {
-            alert(response.data.mensagem);
+        } catch (error) {
+            const { mensagem } = error.response.data;
+            setError(mensagem);
+            alert(mensagem);
         }
-        setStatus(response.data.mensagem);
-
     }
 
     function onSubmit(ev) {
@@ -130,7 +132,7 @@ export default function Register() {
             <p className="forgot-password text-right">
                 Already registered <a href="/login">sign in?</a>
             </p>
-            {status === "Usuário já é cadastrado." ? <p style={{ color: "#ff0000" }}>{status}</p> : ""}
+            {error !== '' && (<p style={{ color: "#ff0000" }}>{error}</p>)}
         </form>
     );
 }
