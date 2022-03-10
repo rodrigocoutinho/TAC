@@ -6,6 +6,8 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import Painel from './components/Painel';
 import Logout from './components/Logout';
+import Pesquisas from './components/Pesquisas';
+import FormPesquisa from './components/FormPesquisa';
 import api from './services/api';
 
 const authToken = sessionStorage.getItem("token");
@@ -34,6 +36,9 @@ function App() {
                     <Link className="nav-link" to={"/painel"}>Painel</Link>
                   </li>
                   <li className="nav-item">
+                    <Link className="nav-link" to={"/pesquisas"}>Pesquisas</Link>
+                  </li>
+                  <li className="nav-item">
                     <Link className="nav-link" to={"/logout"}>Sair</Link>
                   </li>
                 </>
@@ -56,6 +61,9 @@ function App() {
             ) : (
               <>
                 <Route exact path="/painel" component={Painel} />
+                <Route exact path="/pesquisas" component={Pesquisas} />
+                <Route exact path="/pesquisas/new" component={FormPesquisa} />
+                <Route exact path="/pesquisas/:id/edit" component={FormPesquisa} />
                 <Route exact path="/logout" component={Logout} />
               </>
             )}
@@ -63,17 +71,6 @@ function App() {
         </div>
       </div>
     </div></Router>
-  );
-}
-
-function NoMatch() {
-
-  return (
-    <div>
-      <h3>
-        No match for <code>aa</code>
-      </h3>
-    </div>
   );
 }
 
