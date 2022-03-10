@@ -5,21 +5,25 @@ import api from "../services/api";
 const Login = () => {
     const [user, setUser] = useState('');
     const [password, setPassword] = useState('');
-    const [status, setStatus] = useState('');
+    const [error, setError] = useState('');
 
     async function handleLogin() {
+        setError('');
         const data = {
             email: user,
             password: password
         }
-        const response = await api.post('http://localhost:8080/api/login', data);
 
-        if (response.status === 201) {
+        try {
+            const response = await api.post('/login', data);
+            sessionStorage.setItem("token", response.data.token);
             alert(response.data.mensagem);
             window.location.href = "http://localhost:3000/painel";
+        } catch (error) {
+            const { mensagem } = error.response.data;
+            setError(mensagem);
+            alert(mensagem);
         }
-        //recebe a mensagem da api e fica armazenada em status
-        setStatus(response.data.mensagem);
     }
     function onSubmit(ev) {
         ev.preventDefault();
@@ -52,7 +56,7 @@ const Login = () => {
             <p className="forgot-password text-right">
                 Forgot <a href="#">password?</a>
             </p>
-            {status === "Usuário ou senha incorreta" ? <p style={{ color: "#ff0000" }}>{status}</p> : ""}
+            {error !== '' && (<p style={{ color: "#ff0000" }}>{error}</p>)}
         </form>
     );
 }

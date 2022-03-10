@@ -1,10 +1,16 @@
 import React from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link, Redirect } from "react-router-dom";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import Painel from './components/Painel';
+import Logout from './components/Logout';
+import api from './services/api';
+
+const authToken = sessionStorage.getItem("token");
+api.defaults.headers.Authorization = `Bearer ${authToken}`;
+
 function App() {
   return (<Router>
     <div className="App">
@@ -13,15 +19,25 @@ function App() {
           <Link className="navbar-brand" to={"/login"}>Plataforma de Avaliação de Usabilidade de Software</Link>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
-                <Link className="nav-link" to={"/login"}>Login</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to={"/register"}>Sign up</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to={"/painel"}>Painel</Link>
-              </li>
+              {!authToken ? (
+                <>
+                  <li className="nav-item">
+                    <Link className="nav-link" to={"/login"}>Login</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" to={"/register"}>Sign up</Link>
+                  </li>
+                </>
+              ) : (
+                <>
+                  <li className="nav-item">
+                    <Link className="nav-link" to={"/painel"}>Painel</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" to={"/logout"}>Sair</Link>
+                  </li>
+                </>
+              )}
             </ul>
           </div>
         </div>
@@ -29,14 +45,36 @@ function App() {
       <div className="auth-wrapper">
         <div className="auth-inner">
           <Switch>
-            <Route exact path='/' component={Login} />
-            <Route path="/login" component={Login} />
-            <Route path="/register" component={Register} />
-            <Route path="/painel" component={Painel} />
+            <Route exact path="/">
+              {authToken ? <Redirect to="/painel" /> : <Redirect to="/login" />}
+            </Route>
+            {!authToken ? (
+              <>
+                <Route exact path="/login" component={Login} />
+                <Route exact path="/register" component={Register} />
+              </>
+            ) : (
+              <>
+                <Route exact path="/painel" component={Painel} />
+                <Route exact path="/logout" component={Logout} />
+              </>
+            )}
           </Switch>
         </div>
       </div>
     </div></Router>
   );
 }
+
+function NoMatch() {
+
+  return (
+    <div>
+      <h3>
+        No match for <code>aa</code>
+      </h3>
+    </div>
+  );
+}
+
 export default App;

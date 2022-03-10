@@ -1,60 +1,27 @@
 const express = require('express');
-
+const jwt = require('jsonwebtoken');
 const cors = require('cors');
 
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
 
 const User = require('./models/User');
+const authMiddleware = require('./middlewares/auth');
+
 
 const App = express();
+
 
 //Recebe o express json na aplicação APP
 App.use(express.json());
 
-//middleware que permite o acesso a api
-App.use((req, res, next) => {
-    console.log("Acesso permitido!");
-    res.header("Access-Control-Allow-Origin", "*")
-    res.header("Access-Control-Allow-Methods", 'GET,PUT,POST, DELETE')
-    App.use(cors());
-    next();
-});
-
-//Metodo get da api, onde será retornado as informações da api
-App.get("/api/users", async (req, res) => {
-    const users = await User.findAll({
-
-    });
-    res.send(users);
-});
+App.use(cors());
 
 //Metodo post para gravação dos dados enviados da requisição para o banco.
 App.post("/api/register", async (req, res) => {
     //console.log(req.body); imprime o que foi recebido no body da requisição.
-    const { name, fone, tipo, email, password } = req.body;
-
-    // valida para não deixar passar com dados em branco
-    if (!name) {
-        return res.status(422).json({ mensagem: "O nome é obrigatório!" });
-    }
-
-    if (!fone) {
-        return res.status(422).json({ mensagem: "O telefone é obrigatório!" });
-    }
-
-    if (!tipo) {
-        return res.status(422).json({ mensagem: "O Tipo de usuário é obrigatório!" });
-    }
-
-    if (!email) {
-        return res.status(422).json({ mensagem: "O email é obrigatório!" });
-    }
-
-    if (!password) {
-        return res.status(422).json({ mensagem: "A senha é obrigatória!" });
-    }
-
+    const email = req.body.email
+    const senha = req.body.password;
 
     const verifica = await User.findAll({
         where: {
@@ -62,16 +29,16 @@ App.post("/api/register", async (req, res) => {
         }
     });
 
-    if (verifica === 0) {
-        bcrypt.hash(password, saltRounds, async function (err, hash) {
+    if (verifica == 0) {
+        bcrypt.hash(senha, saltRounds, async function (err, hash) {
             if (err) {
                 console.log(err)
             }
             await User.create({
-                name: name,
-                fone: fone,
-                tipo: tipo,
-                email: email,
+                name: req.body.name,
+                fone: req.body.fone,
+                tipo: req.body.tipo,
+                email: req.body.email,
                 password: hash
             }
             ).then(() => {
@@ -84,7 +51,7 @@ App.post("/api/register", async (req, res) => {
 
 
     } else {
-        res.json({
+        res.status(401).json({
             erro: true,
             mensagem: "Usuário já é cadastrado."
         })
@@ -97,25 +64,37 @@ App.post("/api/login", async (req, res) => {
     const email = req.body.email
     const senha = req.body.password;
 
-    //busca inicialmente o email cadastrado
     const verifica = await User.findAll({
         where: {
             email: email,
         }
     });
-    //Se o email for encontrado, compara o hash do usuario para liberar o acesso.
-    if (verifica.length > 0) {
+    if (verifica.length>0){
         bcrypt.compare(senha, verifica[0].password, function (error, response) {
             if (error) {
-                res.send(error)
+                res.status(400).send(error)
             }
-            if (response) {
-                res.status(201).send({ mensagem: "Usuario Logado" })
+            if(response){
+                const privateKey = 'private-key';
+                const token = jwt.sign({ id: verifica[0].id }, privateKey, { expiresIn: '12h' });
+                res.send({mensagem: "Usuario Logado", token: token})
+            }else{
+                res.status(400).send({mensagem: "Usuário ou senha incorreta"})
             }
         });
-    } else {
-        res.send({ mensagem: "Usuário ou senha incorreta" })
+    }else{
+        res.status(400).send({mensagem: "Não registrado"})
     }
+});
+
+App.use(authMiddleware);
+
+//Metodo get da api, onde será retornado as informações da api
+App.get("/api/users", async (req, res) => {
+    const users = await User.findAll({
+
+    });
+    res.send(users);
 });
 
 // Roda o servidor e atribui a porta em que será usada
