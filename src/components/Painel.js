@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import api from "../services/api"
 //Importa o componente grafico criado no arquivo Grafico.js
 import Grafico from "./Grafico";
+//Importa o componente QuadroRespostas criado no arquivo QuadroRespostas.js
+import QuadroRespostas from "./QuadrosRespostas";
 
 //Dashboard onde serão exibidas as pesquisas
 const Painel = () => {
@@ -23,16 +25,12 @@ const Painel = () => {
         {/*Lista que recupera nome de usuário logado*/}
         <ul>
             {user.map(({ name, id }) => (
-                <li key={id}>{name}</li>
+                <li key={'Nome do Usuáro: '+ id}>{'Tipo de Usuário: ' + name}</li>
             ))}
         </ul>
-        {/*Lista estática de pesquisas realizadas(futuramente servirá para pesquisas realmente realizadas).*/}
-        <ul>
-            <h4>Pesquisas Realizadas</h4>
-            <li>Pesquisa Docentes 2022-1</li>
-            <li>Pesquisa Docentes 2022-2</li>
-            <li>Pesquisa Infraestrutura UFG 2022</li>
-        </ul>
+        
+        {/*Chamada do componente QuadroRespostas*/}
+        <QuadroRespostas/>
         {/*Chamada do componente Grafico*/}
         <Grafico/>
 
