@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from "react";
-import api from "../services/api"
+import api from "../services/api";
+//Importa o componente grafico criado no arquivo Grafico.js
+import Grafico from "./Grafico";
+//Importa o componente QuadroRespostas criado no arquivo QuadroRespostas.js
+import QuadroRespostas from "./QuadrosRespostas";
 
 //Dashboard onde serão exibidas as pesquisas
 const Painel = () => {
@@ -16,11 +20,20 @@ const Painel = () => {
     }, []);
 
     return (
+        <div>
+
         <ul>
             {user.map(({ name, id }) => (
                 <li key={id}>{name}</li>
             ))}
         </ul>
+        
+        {/*Chamada do componente QuadroRespostas*/}
+        <QuadroRespostas/>
+        {/*Chamada do componente Grafico*/}
+        <Grafico/>
+
+        </div>
     );
 }
 
