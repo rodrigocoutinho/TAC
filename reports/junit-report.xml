@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;criar-conta-válida" tests="8" failures="0" skipped="8">
+        <properties>
+            <property name="@conta" value="true">
+            </property>
+            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/conta.feature">
+            </property>
+        </properties>
+        <testcase name="Dado que um usuário ainda não tem cadastro" classname="criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;criar-conta-válida">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="E que o “Engenheiro de Software” não possui uma conta." classname="criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;criar-conta-válida">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Quando fornece &lt;nome&gt;" classname="criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;criar-conta-válida">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="E fornece &lt;fone&gt;" classname="criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;criar-conta-válida">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="E fornece &lt;tipo&gt;" classname="criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;criar-conta-válida">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="E fornece &lt;email&gt;" classname="criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;criar-conta-válida">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="E fornece &lt;password&gt;" classname="criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;criar-conta-válida">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Então é exibida mnensagem &quot;Usuário cadastrado com sucesso&quot;" classname="criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;criar-conta-válida">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;conta-existente" tests="4" failures="0" skipped="4">
+        <properties>
+            <property name="@conta" value="true">
+            </property>
+            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/conta.feature">
+            </property>
+        </properties>
+        <testcase name="Dado um usuário que tem conta" classname="criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;conta-existente">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Quando os dados forem preenchidos." classname="criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;conta-existente">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="E &lt;email&gt; existente" classname="criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;conta-existente">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Então é exibida mensagem &quot;Usuário já é cadastrado.&quot;" classname="criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;conta-existente">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;dados-ausentes" tests="4" failures="0" skipped="4">
+        <properties>
+            <property name="@conta" value="true">
+            </property>
+            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/conta.feature">
+            </property>
+        </properties>
+        <testcase name="Dado que um usuário não preenche as informações para criação de conta" classname="criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;dados-ausentes">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="E que o Usuario não possui uma conta." classname="criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;dados-ausentes">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Quando campo obrigatório não é preenchido" classname="criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;dados-ausentes">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Então é exibida mnensagem &quot;Campo obrigatório&quot;" classname="criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;dados-ausentes">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="gerar-relatório-de-usabilidade;gerar-relatório" tests="6" failures="0" skipped="6">
+        <properties>
+            <property name="@gerar_relatorio" value="true">
+            </property>
+            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/gerar-relatorio.feature">
+            </property>
+        </properties>
+        <testcase name="Dado que o Engenheiro de Software tenha avaliação de usabilidade cadastrada." classname="gerar-relatório-de-usabilidade;gerar-relatório">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="E que esteja logado" classname="gerar-relatório-de-usabilidade;gerar-relatório">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Quando a avaliação estiver finalizada" classname="gerar-relatório-de-usabilidade;gerar-relatório">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="E o Engenheiro de Software clicar no botão Gerar relatório" classname="gerar-relatório-de-usabilidade;gerar-relatório">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Então o relatório é gerado" classname="gerar-relatório-de-usabilidade;gerar-relatório">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="E relatório é exibido" classname="gerar-relatório-de-usabilidade;gerar-relatório">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="searching-for-vote-cards-app;google-search-for-vote-cards-app" tests="2" failures="1" skipped="0">
+        <properties>
+            <property name="@search" value="true">
+            </property>
+            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/google-search.feature">
+            </property>
+        </properties>
+        <testcase name="When I search Google for &quot;itunes vote cards app&quot;" classname="searching-for-vote-cards-app;google-search-for-vote-cards-app" time="0.7564533">
+            <failure message="SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 86">SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 86
+Current browser version is 99.0.4844.74 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+  (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Windows NT 10.0.19044 x86_64)
+    at Object.checkLegacyResponse (C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-cucumber-js\runtime\world.js:207:29</failure>
+        </testcase>
+        <testcase name="Then I should see &quot;Vote Cards&quot; in the results" classname="searching-for-vote-cards-app;google-search-for-vote-cards-app">
+        </testcase>
+    </testsuite>
+    <testsuite name="searching-for-vote-cards-app;google-search-for-course-of-life-app" tests="2" failures="1" skipped="0">
+        <properties>
+            <property name="@search" value="true">
+            </property>
+            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/google-search.feature">
+            </property>
+        </properties>
+        <testcase name="When I search Google for &quot;CourseOf.Life&quot;" classname="searching-for-vote-cards-app;google-search-for-course-of-life-app" time="0.7519135">
+            <failure message="SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 86">SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 86
+Current browser version is 99.0.4844.74 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+  (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Windows NT 10.0.19044 x86_64)
+    at Object.checkLegacyResponse (C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-cucumber-js\runtime\world.js:207:29</failure>
+        </testcase>
+        <testcase name="Then I should see some results" classname="searching-for-vote-cards-app;google-search-for-course-of-life-app">
+        </testcase>
+    </testsuite>
+    <testsuite name="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-válido" tests="7" failures="0" skipped="7">
+        <properties>
+            <property name="@login" value="true">
+            </property>
+            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/login.feature">
+            </property>
+        </properties>
+        <testcase name="Dado que o Engenheiro de Software possui uma conta" classname="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-válido">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="E o usuário que forneça &lt;email&gt;" classname="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-válido">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="E forneça &lt;password&gt;" classname="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-válido">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Quando dados &lt;email&gt;" classname="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-válido">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="E &lt;password&gt; são válidos" classname="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-válido">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Então o sistema deve permitir a autenticação do usuário" classname="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-válido">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="E é exibida mensagem &quot;Usuario logado&quot;" classname="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-válido">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-inválido" tests="6" failures="0" skipped="6">
+        <properties>
+            <property name="@login" value="true">
+            </property>
+            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/login.feature">
+            </property>
+        </properties>
+        <testcase name="Dado que o Engenheiro de Software possui uma conta" classname="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-inválido">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="E o usuário que forneça &lt;email&gt;" classname="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-inválido">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="E forneça &lt;password&gt;" classname="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-inválido">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Quando dados &lt;email&gt;" classname="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-inválido">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="E &lt;password&gt; são inválidos" classname="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-inválido">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Então exibir mensagem &quot;Usuário ou senha incorreta&quot;" classname="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-inválido">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-de-usuário-não-registrado" tests="5" failures="0" skipped="5">
+        <properties>
+            <property name="@login" value="true">
+            </property>
+            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/login.feature">
+            </property>
+        </properties>
+        <testcase name="Dado que o Engenheiro de Software possui uma conta" classname="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-de-usuário-não-registrado">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="E o usuário que forneça &lt;email&gt;" classname="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-de-usuário-não-registrado">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="E forneça &lt;password&gt;" classname="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-de-usuário-não-registrado">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Quando dados &lt;email&gt; não é valido" classname="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-de-usuário-não-registrado">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Então exibir mensagem &quot;Não registrado&quot;" classname="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-de-usuário-não-registrado">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="criar-avaliação-de-usabilidade;criar-avaliação" tests="7" failures="0" skipped="7">
+        <properties>
+            <property name="@pesquisa" value="true">
+            </property>
+            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/pesquisa.feature">
+            </property>
+        </properties>
+        <testcase name="Dado que o Engenheiro de Software tenha acesso a tela de login" classname="criar-avaliação-de-usabilidade;criar-avaliação">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="E que um usuário esteja logado." classname="criar-avaliação-de-usabilidade;criar-avaliação">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Quando o &lt;name&gt; da avaliação é preenchido" classname="criar-avaliação-de-usabilidade;criar-avaliação">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="E a &lt;descricao&gt; é preenchida" classname="criar-avaliação-de-usabilidade;criar-avaliação">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="E o &lt;tcle&gt; é preenchido" classname="criar-avaliação-de-usabilidade;criar-avaliação">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="E o &lt;status&gt; é preenchido" classname="criar-avaliação-de-usabilidade;criar-avaliação">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Então a pesquisa é criada" classname="criar-avaliação-de-usabilidade;criar-avaliação">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="preencher-avaliação;avaliar" tests="5" failures="0" skipped="5">
+        <properties>
+            <property name="@avaliar" value="true">
+            </property>
+            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/preencher-avaliacao.feature">
+            </property>
+        </properties>
+        <testcase name="Dado que o Usuário possua conta" classname="preencher-avaliação;avaliar">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="E que esteja logado" classname="preencher-avaliação;avaliar">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Quando as respostas estiverem preenchidas" classname="preencher-avaliação;avaliar">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="E o usuário clica no botão enviar" classname="preencher-avaliação;avaliar">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Então é exibida a mensagem &quot;Avaliação realizada com sucesso&quot;" classname="preencher-avaliação;avaliar">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+</testsuites>

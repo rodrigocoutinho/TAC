@@ -1,0 +1,920 @@
+[
+  {
+    "description": "  A fim de criar de conta na plataforma.\n  Como usuario externo\n  Eu quero criar conta para ter acesso ou criar avaliações de usabilidade de software.",
+    "elements": [
+      {
+        "id": "criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;criar-conta-válida",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Criar conta válida",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "name": "que um usuário ainda não tem cadastro",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "name": "que o “Engenheiro de Software” não possui uma conta.",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "name": "fornece <nome>",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "name": "fornece <fone>",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "name": "fornece <tipo>",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "name": "fornece <email>",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "name": "fornece <password>",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "name": "é exibida mnensagem \"Usuário cadastrado com sucesso\"",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "failed",
+              "duration": 4312145200,
+              "error_message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 86\nCurrent browser version is 99.0.4844.74 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n  (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Windows NT 10.0.19044 x86_64)\n    at Object.checkLegacyResponse (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\error.js:529:15)\n    at parseHttpResponse (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\http.js:441:30\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\nFrom: Task: WebDriver.createSession()\n    at Function.createSession (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\webdriver.js:769:24)\n    at Function.createSession (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\chrome.js:761:15)\n    at createDriver (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\index.js:170:33)\n    at Builder.build (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\index.js:642:16)\n    at new module.exports (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\chromeDriver.js:20:8)\n    at getDriverInstance (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:54:22)\n    at C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:207:29"
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@conta",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;conta-existente",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Conta Existente",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "name": "um usuário que tem conta",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "name": "os dados forem preenchidos.",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "name": "<email> existente",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 22
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "name": "é exibida mensagem \"Usuário já é cadastrado.\"",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "failed",
+              "duration": 809068400,
+              "error_message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 86\nCurrent browser version is 99.0.4844.74 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n  (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Windows NT 10.0.19044 x86_64)\n    at Object.checkLegacyResponse (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\error.js:529:15)\n    at parseHttpResponse (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\http.js:441:30\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\nFrom: Task: WebDriver.createSession()\n    at Function.createSession (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\webdriver.js:769:24)\n    at Function.createSession (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\chrome.js:761:15)\n    at createDriver (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\index.js:170:33)\n    at Builder.build (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\index.js:642:16)\n    at new module.exports (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\chromeDriver.js:20:8)\n    at getDriverInstance (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:54:22)\n    at C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:207:29"
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@conta",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;dados-ausentes",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Dados Ausentes",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "name": "que um usuário não preenche as informações para criação de conta",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 26
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "name": "que o Usuario não possui uma conta.",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 27
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "name": "campo obrigatório não é preenchido",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 28
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "name": "é exibida mnensagem \"Campo obrigatório\"",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 29
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "failed",
+              "duration": 1128698300,
+              "error_message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 86\nCurrent browser version is 99.0.4844.74 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n  (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Windows NT 10.0.19044 x86_64)\n    at Object.checkLegacyResponse (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\error.js:529:15)\n    at parseHttpResponse (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\http.js:441:30\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\nFrom: Task: WebDriver.createSession()\n    at Function.createSession (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\webdriver.js:769:24)\n    at Function.createSession (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\chrome.js:761:15)\n    at createDriver (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\index.js:170:33)\n    at Builder.build (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\index.js:642:16)\n    at new module.exports (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\chromeDriver.js:20:8)\n    at getDriverInstance (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:54:22)\n    at C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:207:29"
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@conta",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software",
+    "keyword": "Funcionalidade",
+    "line": 4,
+    "name": "Criar conta na plataforma de avaliação de usabilidade de software",
+    "tags": [
+      {
+        "name": "@conta",
+        "line": 3
+      }
+    ],
+    "uri": "C:/Users/ASPIRE5/Documents/TAC/features/conta.feature"
+  },
+  {
+    "description": "  A fim de gerar relatório de avaliação de usabilidade\n  Como usuário Engenheiro de software\n  Eu quero gerar relatório de avaliação de usabilidade de software",
+    "elements": [
+      {
+        "id": "gerar-relatório-de-usabilidade;gerar-relatório",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Gerar Relatório",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "name": "que o Engenheiro de Software tenha avaliação de usabilidade cadastrada.",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "name": "que esteja logado",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "name": "a avaliação estiver finalizada",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "name": "o Engenheiro de Software clicar no botão Gerar relatório",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "name": "o relatório é gerado",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "name": "relatório é exibido",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "failed",
+              "duration": 806536500,
+              "error_message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 86\nCurrent browser version is 99.0.4844.74 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n  (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Windows NT 10.0.19044 x86_64)\n    at Object.checkLegacyResponse (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\error.js:529:15)\n    at parseHttpResponse (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\http.js:441:30\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\nFrom: Task: WebDriver.createSession()\n    at Function.createSession (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\webdriver.js:769:24)\n    at Function.createSession (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\chrome.js:761:15)\n    at createDriver (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\index.js:170:33)\n    at Builder.build (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\index.js:642:16)\n    at new module.exports (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\chromeDriver.js:20:8)\n    at getDriverInstance (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:54:22)\n    at C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:207:29"
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@gerar_relatorio",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "gerar-relatório-de-usabilidade",
+    "keyword": "Funcionalidade",
+    "line": 4,
+    "name": "Gerar relatório de usabilidade",
+    "tags": [
+      {
+        "name": "@gerar_relatorio",
+        "line": 3
+      }
+    ],
+    "uri": "C:/Users/ASPIRE5/Documents/TAC/features/gerar-relatorio.feature"
+  },
+  {
+    "description": "  As an internet user\n  In order to find out more about the itunes vote cards app\n  I want to be able to search for information about the itunes vote cards app",
+    "elements": [
+      {
+        "id": "searching-for-vote-cards-app;google-search-for-vote-cards-app",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Google search for vote cards app",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I search Google for \"itunes vote cards app\"",
+            "result": {
+              "status": "failed",
+              "duration": 756453300,
+              "error_message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 86\nCurrent browser version is 99.0.4844.74 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n  (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Windows NT 10.0.19044 x86_64)\n    at Object.checkLegacyResponse (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\error.js:529:15)\n    at parseHttpResponse (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\http.js:441:30\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\nFrom: Task: WebDriver.createSession()\n    at Function.createSession (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\webdriver.js:769:24)\n    at Function.createSession (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\chrome.js:761:15)\n    at createDriver (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\index.js:170:33)\n    at Builder.build (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\index.js:642:16)\n    at new module.exports (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\chromeDriver.js:20:8)\n    at getDriverInstance (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:54:22)\n    at C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:207:29"
+            },
+            "line": 8,
+            "match": {
+              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\features\\step-definitions\\google-search-steps.js:3"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should see \"Vote Cards\" in the results",
+            "result": {
+              "status": "ambiguous"
+            },
+            "line": 9
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "failed",
+              "duration": 668100,
+              "error_message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 86\nCurrent browser version is 99.0.4844.74 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n  (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Windows NT 10.0.19044 x86_64)\n    at Object.checkLegacyResponse (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\error.js:529:15)\n    at parseHttpResponse (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\http.js:441:30\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\nFrom: Task: WebDriver.createSession()\n    at Function.createSession (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\webdriver.js:769:24)\n    at Function.createSession (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\chrome.js:761:15)\n    at createDriver (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\index.js:170:33)\n    at Builder.build (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\index.js:642:16)\n    at new module.exports (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\chromeDriver.js:20:8)\n    at getDriverInstance (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:54:22)\n    at C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:207:29\nFrom: Task: WebDriver.takeScreenshot()\n    at thenableWebDriverProxy.schedule (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\webdriver.js:807:17)\n    at thenableWebDriverProxy.takeScreenshot (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\webdriver.js:1083:17)\n    at createWorld.<anonymous> (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:253:27)\n    at processTicksAndRejections (node:internal/process/task_queues:78:11)"
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@search",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "searching-for-vote-cards-app;google-search-for-course-of-life-app",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Google search for course of life app",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I search Google for \"CourseOf.Life\"",
+            "result": {
+              "status": "failed",
+              "duration": 751913500,
+              "error_message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 86\nCurrent browser version is 99.0.4844.74 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n  (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Windows NT 10.0.19044 x86_64)\n    at Object.checkLegacyResponse (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\error.js:529:15)\n    at parseHttpResponse (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\http.js:441:30\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\nFrom: Task: WebDriver.createSession()\n    at Function.createSession (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\webdriver.js:769:24)\n    at Function.createSession (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\chrome.js:761:15)\n    at createDriver (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\index.js:170:33)\n    at Builder.build (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\index.js:642:16)\n    at new module.exports (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\chromeDriver.js:20:8)\n    at getDriverInstance (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:54:22)\n    at C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:207:29"
+            },
+            "line": 12,
+            "match": {
+              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\features\\step-definitions\\google-search-steps.js:3"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should see some results",
+            "result": {
+              "status": "ambiguous"
+            },
+            "line": 13
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "failed",
+              "duration": 526200,
+              "error_message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 86\nCurrent browser version is 99.0.4844.74 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n  (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Windows NT 10.0.19044 x86_64)\n    at Object.checkLegacyResponse (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\error.js:529:15)\n    at parseHttpResponse (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\http.js:441:30\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\nFrom: Task: WebDriver.createSession()\n    at Function.createSession (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\webdriver.js:769:24)\n    at Function.createSession (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\chrome.js:761:15)\n    at createDriver (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\index.js:170:33)\n    at Builder.build (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\index.js:642:16)\n    at new module.exports (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\chromeDriver.js:20:8)\n    at getDriverInstance (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:54:22)\n    at C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:207:29\nFrom: Task: WebDriver.takeScreenshot()\n    at thenableWebDriverProxy.schedule (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\webdriver.js:807:17)\n    at thenableWebDriverProxy.takeScreenshot (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\webdriver.js:1083:17)\n    at createWorld.<anonymous> (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:253:27)\n    at processTicksAndRejections (node:internal/process/task_queues:78:11)"
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@search",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "searching-for-vote-cards-app",
+    "keyword": "Feature",
+    "line": 2,
+    "name": "Searching for vote cards app",
+    "tags": [
+      {
+        "name": "@search",
+        "line": 1
+      }
+    ],
+    "uri": "C:/Users/ASPIRE5/Documents/TAC/features/google-search.feature"
+  },
+  {
+    "description": "  A fim de  logar na plataforma\n  Como usuario registrado\n  Eu quero Logar para ter acesso a criação e avaliação de usabilidade",
+    "elements": [
+      {
+        "id": "logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-válido",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Login válido",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "name": "que o Engenheiro de Software possui uma conta",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "name": "o usuário que forneça <email>",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "name": "forneça <password>",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "name": "dados <email>",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "name": "<password> são válidos",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "name": "o sistema deve permitir a autenticação do usuário",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "name": "é exibida mensagem \"Usuario logado\"",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "failed",
+              "duration": 956706300,
+              "error_message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 86\nCurrent browser version is 99.0.4844.74 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n  (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Windows NT 10.0.19044 x86_64)\n    at Object.checkLegacyResponse (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\error.js:529:15)\n    at parseHttpResponse (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\http.js:441:30\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\nFrom: Task: WebDriver.createSession()\n    at Function.createSession (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\webdriver.js:769:24)\n    at Function.createSession (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\chrome.js:761:15)\n    at createDriver (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\index.js:170:33)\n    at Builder.build (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\index.js:642:16)\n    at new module.exports (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\chromeDriver.js:20:8)\n    at getDriverInstance (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:54:22)\n    at C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:207:29"
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-inválido",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Login inválido",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "name": "que o Engenheiro de Software possui uma conta",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "name": "o usuário que forneça <email>",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "name": "forneça <password>",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "name": "dados <email>",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 22
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "name": "<password> são inválidos",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "name": "exibir mensagem \"Usuário ou senha incorreta\"",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "failed",
+              "duration": 765559100,
+              "error_message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 86\nCurrent browser version is 99.0.4844.74 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n  (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Windows NT 10.0.19044 x86_64)\n    at Object.checkLegacyResponse (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\error.js:529:15)\n    at parseHttpResponse (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\http.js:441:30\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\nFrom: Task: WebDriver.createSession()\n    at Function.createSession (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\webdriver.js:769:24)\n    at Function.createSession (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\chrome.js:761:15)\n    at createDriver (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\index.js:170:33)\n    at Builder.build (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\index.js:642:16)\n    at new module.exports (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\chromeDriver.js:20:8)\n    at getDriverInstance (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:54:22)\n    at C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:207:29"
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-de-usuário-não-registrado",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "Login de usuário não registrado",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "name": "que o Engenheiro de Software possui uma conta",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 27
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "name": "o usuário que forneça <email>",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 28
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "name": "forneça <password>",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 29
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "name": "dados <email> não é valido",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "name": "exibir mensagem \"Não registrado\"",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 31
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "failed",
+              "duration": 874549000,
+              "error_message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 86\nCurrent browser version is 99.0.4844.74 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n  (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Windows NT 10.0.19044 x86_64)\n    at Object.checkLegacyResponse (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\error.js:529:15)\n    at parseHttpResponse (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\http.js:441:30\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\nFrom: Task: WebDriver.createSession()\n    at Function.createSession (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\webdriver.js:769:24)\n    at Function.createSession (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\chrome.js:761:15)\n    at createDriver (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\index.js:170:33)\n    at Builder.build (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\index.js:642:16)\n    at new module.exports (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\chromeDriver.js:20:8)\n    at getDriverInstance (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:54:22)\n    at C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:207:29"
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "logar-na-plataforma-de-avaliação-de-usabilidade-de-software",
+    "keyword": "Funcionalidade",
+    "line": 4,
+    "name": "Logar na plataforma de avaliação de usabilidade de software",
+    "tags": [
+      {
+        "name": "@login",
+        "line": 3
+      }
+    ],
+    "uri": "C:/Users/ASPIRE5/Documents/TAC/features/login.feature"
+  },
+  {
+    "description": "  A fim de  criar avaliação de usabilidade\n  Como usuário Engenheiro de Software\n  Eu quero criar avaliação de usabilidade de software",
+    "elements": [
+      {
+        "id": "criar-avaliação-de-usabilidade;criar-avaliação",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Criar avaliação",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "name": "que o Engenheiro de Software tenha acesso a tela de login",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "name": "que um usuário esteja logado.",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "name": "o <name> da avaliação é preenchido",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "name": "a <descricao> é preenchida",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "name": "o <tcle> é preenchido",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "name": "o <status> é preenchido",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "name": "a pesquisa é criada",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "failed",
+              "duration": 823535300,
+              "error_message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 86\nCurrent browser version is 99.0.4844.74 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n  (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Windows NT 10.0.19044 x86_64)\n    at Object.checkLegacyResponse (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\error.js:529:15)\n    at parseHttpResponse (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\http.js:441:30\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\nFrom: Task: WebDriver.createSession()\n    at Function.createSession (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\webdriver.js:769:24)\n    at Function.createSession (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\chrome.js:761:15)\n    at createDriver (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\index.js:170:33)\n    at Builder.build (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\index.js:642:16)\n    at new module.exports (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\chromeDriver.js:20:8)\n    at getDriverInstance (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:54:22)\n    at C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:207:29"
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@pesquisa",
+            "line": 2
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "criar-avaliação-de-usabilidade",
+    "keyword": "Funcionalidade",
+    "line": 3,
+    "name": "Criar avaliação de usabilidade",
+    "tags": [
+      {
+        "name": "@pesquisa",
+        "line": 2
+      }
+    ],
+    "uri": "C:/Users/ASPIRE5/Documents/TAC/features/pesquisa.feature"
+  },
+  {
+    "description": "  A fim de  preencher a avaliação de usabilidade de software\n  Como usuário logado\n  Eu quero preencher a avaliações de usabilidade de software",
+    "elements": [
+      {
+        "id": "preencher-avaliação;avaliar",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Avaliar",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "name": "que o Usuário possua conta",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "name": "que esteja logado",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "name": "as respostas estiverem preenchidas",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "name": "o usuário clica no botão enviar",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "name": "é exibida a mensagem \"Avaliação realizada com sucesso\"",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "failed",
+              "duration": 733269300,
+              "error_message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 86\nCurrent browser version is 99.0.4844.74 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n  (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Windows NT 10.0.19044 x86_64)\n    at Object.checkLegacyResponse (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\error.js:529:15)\n    at parseHttpResponse (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\http.js:441:30\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\nFrom: Task: WebDriver.createSession()\n    at Function.createSession (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\lib\\webdriver.js:769:24)\n    at Function.createSession (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\chrome.js:761:15)\n    at createDriver (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\index.js:170:33)\n    at Builder.build (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-webdriver\\index.js:642:16)\n    at new module.exports (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\chromeDriver.js:20:8)\n    at getDriverInstance (C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:54:22)\n    at C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:207:29"
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@avaliar",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "preencher-avaliação",
+    "keyword": "Funcionalidade",
+    "line": 4,
+    "name": "Preencher avaliação",
+    "tags": [
+      {
+        "name": "@avaliar",
+        "line": 3
+      }
+    ],
+    "uri": "C:/Users/ASPIRE5/Documents/TAC/features/preencher-avaliacao.feature"
+  }
+]
