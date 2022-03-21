@@ -21,17 +21,21 @@ const Painel = () => {
 
     return (
         <div>
-
-        <ul>
-            {user.map(({ name, id }) => (
-                <li key={id}>{name}</li>
-            ))}
-        </ul>
-        
-        {/*Chamada do componente QuadroRespostas*/}
-        <QuadroRespostas/>
-        {/*Chamada do componente Grafico*/}
-        <Grafico/>
+            <div>
+                <ul>
+                    {user.map(({ name, id }) => (
+                        <li key={id}>{name}</li>
+                    ))}
+                </ul>
+            </div>
+            <div>
+                {/*Chamada do componente QuadroRespostas*/}
+                <QuadroRespostas />
+            </div>
+            <div>
+                {/*Chamada do componente Grafico*/}
+                <Grafico />
+            </div>
 
         </div>
     );

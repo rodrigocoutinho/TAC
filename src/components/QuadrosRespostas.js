@@ -10,6 +10,12 @@ const QuadroRespostas = () => {
     console.log(numeroRespostasASR);
     console.log(numeroRespostasEA);
     console.log(numeroRespostasR);
+
+    return(
+        <div>
+            Teste
+        </div>
+    )
 }
 
 export default QuadroRespostas;
