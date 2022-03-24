@@ -120,58 +120,28 @@
             </skipped>
         </testcase>
     </testsuite>
-    <testsuite name="searching-for-vote-cards-app;google-search-for-vote-cards-app" tests="2" failures="1" skipped="0">
+    <testsuite name="searching-for-vote-cards-app;google-search-for-vote-cards-app" tests="2" failures="0" skipped="0">
         <properties>
             <property name="@search" value="true">
             </property>
             <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/google-search.feature">
             </property>
         </properties>
-        <testcase name="When I search Google for &quot;itunes vote cards app&quot;" classname="searching-for-vote-cards-app;google-search-for-vote-cards-app" time="0.7564533">
-            <failure message="SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 86">SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 86
-Current browser version is 99.0.4844.74 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
-  (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Windows NT 10.0.19044 x86_64)
-    at Object.checkLegacyResponse (C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-webdriver\lib\error.js:529:15)
-    at parseHttpResponse (C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-webdriver\lib\http.js:441:30
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-From: Task: WebDriver.createSession()
-    at Function.createSession (C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
-    at Function.createSession (C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-webdriver\chrome.js:761:15)
-    at createDriver (C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-webdriver\index.js:170:33)
-    at Builder.build (C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-webdriver\index.js:642:16)
-    at new module.exports (C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
-    at getDriverInstance (C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
-    at C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-cucumber-js\runtime\world.js:207:29</failure>
+        <testcase name="When I search Google for &quot;Pontos turisticos em goiânia&quot;" classname="searching-for-vote-cards-app;google-search-for-vote-cards-app" time="4.2710846">
         </testcase>
-        <testcase name="Then I should see &quot;Vote Cards&quot; in the results" classname="searching-for-vote-cards-app;google-search-for-vote-cards-app">
+        <testcase name="Then I should see some results" classname="searching-for-vote-cards-app;google-search-for-vote-cards-app" time="0.7828987">
         </testcase>
     </testsuite>
-    <testsuite name="searching-for-vote-cards-app;google-search-for-course-of-life-app" tests="2" failures="1" skipped="0">
+    <testsuite name="searching-for-vote-cards-app;i-should-see-some-results" tests="2" failures="0" skipped="0">
         <properties>
             <property name="@search" value="true">
             </property>
             <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/google-search.feature">
             </property>
         </properties>
-        <testcase name="When I search Google for &quot;CourseOf.Life&quot;" classname="searching-for-vote-cards-app;google-search-for-course-of-life-app" time="0.7519135">
-            <failure message="SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 86">SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 86
-Current browser version is 99.0.4844.74 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
-  (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Windows NT 10.0.19044 x86_64)
-    at Object.checkLegacyResponse (C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-webdriver\lib\error.js:529:15)
-    at parseHttpResponse (C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-webdriver\lib\http.js:441:30
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-From: Task: WebDriver.createSession()
-    at Function.createSession (C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
-    at Function.createSession (C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-webdriver\chrome.js:761:15)
-    at createDriver (C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-webdriver\index.js:170:33)
-    at Builder.build (C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-webdriver\index.js:642:16)
-    at new module.exports (C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
-    at getDriverInstance (C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
-    at C:\Users\ASPIRE5\Documents\TAC\node_modules\selenium-cucumber-js\runtime\world.js:207:29</failure>
+        <testcase name="When I type query as &quot;Teste&quot;" classname="searching-for-vote-cards-app;i-should-see-some-results" time="4.8351824">
         </testcase>
-        <testcase name="Then I should see some results" classname="searching-for-vote-cards-app;google-search-for-course-of-life-app">
+        <testcase name="Then I submit" classname="searching-for-vote-cards-app;i-should-see-some-results" time="0.5301038">
         </testcase>
     </testsuite>
     <testsuite name="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-válido" tests="7" failures="0" skipped="7">
