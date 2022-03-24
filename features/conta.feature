@@ -9,7 +9,7 @@ Funcionalidade: Criar conta na plataforma de avaliação de usabilidade de softw
     Cenário: Criar conta válida
         Dado que um usuário ainda não tem cadastro
         E que o “Engenheiro de Software” não possui uma conta.
-        Quando  fornece <nome>
+        Quando  fornece <name>
         E fornece <fone>
         E fornece <tipo>
         E fornece <email>

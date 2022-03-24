@@ -4,7 +4,7 @@
         <properties>
             <property name="@conta" value="true">
             </property>
-            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/conta.feature">
+            <property name="URI" value="C:/Users/Rodrigo/Documents/TAC/features/conta.feature">
             </property>
         </properties>
         <testcase name="Dado que um usuário ainda não tem cadastro" classname="criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;criar-conta-válida">
@@ -15,7 +15,7 @@
             <skipped message="">
             </skipped>
         </testcase>
-        <testcase name="Quando fornece &lt;nome&gt;" classname="criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;criar-conta-válida">
+        <testcase name="Quando fornece &lt;name&gt;" classname="criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;criar-conta-válida">
             <skipped message="">
             </skipped>
         </testcase>
@@ -44,7 +44,7 @@
         <properties>
             <property name="@conta" value="true">
             </property>
-            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/conta.feature">
+            <property name="URI" value="C:/Users/Rodrigo/Documents/TAC/features/conta.feature">
             </property>
         </properties>
         <testcase name="Dado um usuário que tem conta" classname="criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;conta-existente">
@@ -68,7 +68,7 @@
         <properties>
             <property name="@conta" value="true">
             </property>
-            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/conta.feature">
+            <property name="URI" value="C:/Users/Rodrigo/Documents/TAC/features/conta.feature">
             </property>
         </properties>
         <testcase name="Dado que um usuário não preenche as informações para criação de conta" classname="criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;dados-ausentes">
@@ -92,7 +92,7 @@
         <properties>
             <property name="@gerar_relatorio" value="true">
             </property>
-            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/gerar-relatorio.feature">
+            <property name="URI" value="C:/Users/Rodrigo/Documents/TAC/features/gerar-relatorio.feature">
             </property>
         </properties>
         <testcase name="Dado que o Engenheiro de Software tenha avaliação de usabilidade cadastrada." classname="gerar-relatório-de-usabilidade;gerar-relatório">
@@ -124,31 +124,31 @@
         <properties>
             <property name="@search" value="true">
             </property>
-            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/google-search.feature">
+            <property name="URI" value="C:/Users/Rodrigo/Documents/TAC/features/google-search.feature">
             </property>
         </properties>
-        <testcase name="When I search Google for &quot;Pontos turisticos em goiânia&quot;" classname="searching-for-vote-cards-app;google-search-for-vote-cards-app" time="4.2710846">
+        <testcase name="When I search Google for &quot;Pontos turisticos em goiânia&quot;" classname="searching-for-vote-cards-app;google-search-for-vote-cards-app" time="4.249885601">
         </testcase>
-        <testcase name="Then I should see some results" classname="searching-for-vote-cards-app;google-search-for-vote-cards-app" time="0.7828987">
+        <testcase name="Then I should see some results" classname="searching-for-vote-cards-app;google-search-for-vote-cards-app" time="0.7513856">
         </testcase>
     </testsuite>
     <testsuite name="searching-for-vote-cards-app;i-should-see-some-results" tests="2" failures="0" skipped="0">
         <properties>
             <property name="@search" value="true">
             </property>
-            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/google-search.feature">
+            <property name="URI" value="C:/Users/Rodrigo/Documents/TAC/features/google-search.feature">
             </property>
         </properties>
-        <testcase name="When I type query as &quot;Teste&quot;" classname="searching-for-vote-cards-app;i-should-see-some-results" time="4.8351824">
+        <testcase name="When I type query as &quot;Teste&quot;" classname="searching-for-vote-cards-app;i-should-see-some-results" time="3.911330999">
         </testcase>
-        <testcase name="Then I submit" classname="searching-for-vote-cards-app;i-should-see-some-results" time="0.5301038">
+        <testcase name="Then I submit" classname="searching-for-vote-cards-app;i-should-see-some-results" time="0.725078001">
         </testcase>
     </testsuite>
     <testsuite name="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-válido" tests="7" failures="0" skipped="7">
         <properties>
             <property name="@login" value="true">
             </property>
-            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/login.feature">
+            <property name="URI" value="C:/Users/Rodrigo/Documents/TAC/features/login.feature">
             </property>
         </properties>
         <testcase name="Dado que o Engenheiro de Software possui uma conta" classname="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-válido">
@@ -184,7 +184,7 @@
         <properties>
             <property name="@login" value="true">
             </property>
-            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/login.feature">
+            <property name="URI" value="C:/Users/Rodrigo/Documents/TAC/features/login.feature">
             </property>
         </properties>
         <testcase name="Dado que o Engenheiro de Software possui uma conta" classname="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-inválido">
@@ -216,7 +216,7 @@
         <properties>
             <property name="@login" value="true">
             </property>
-            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/login.feature">
+            <property name="URI" value="C:/Users/Rodrigo/Documents/TAC/features/login.feature">
             </property>
         </properties>
         <testcase name="Dado que o Engenheiro de Software possui uma conta" classname="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-de-usuário-não-registrado">
@@ -244,7 +244,7 @@
         <properties>
             <property name="@pesquisa" value="true">
             </property>
-            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/pesquisa.feature">
+            <property name="URI" value="C:/Users/Rodrigo/Documents/TAC/features/pesquisa.feature">
             </property>
         </properties>
         <testcase name="Dado que o Engenheiro de Software tenha acesso a tela de login" classname="criar-avaliação-de-usabilidade;criar-avaliação">
@@ -280,7 +280,7 @@
         <properties>
             <property name="@avaliar" value="true">
             </property>
-            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/preencher-avaliacao.feature">
+            <property name="URI" value="C:/Users/Rodrigo/Documents/TAC/features/preencher-avaliacao.feature">
             </property>
         </properties>
         <testcase name="Dado que o Usuário possua conta" classname="preencher-avaliação;avaliar">

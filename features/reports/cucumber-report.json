@@ -13,27 +13,36 @@
             "keyword": "Dado ",
             "name": "que um usuário ainda não tem cadastro",
             "result": {
-              "status": "undefined"
+              "status": "pending"
             },
-            "line": 10
+            "line": 10,
+            "match": {
+              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\features\\step-definitions\\conta-steps.js:2"
+            }
           },
           {
             "arguments": [],
             "keyword": "E ",
             "name": "que o “Engenheiro de Software” não possui uma conta.",
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
-            "line": 11
+            "line": 11,
+            "match": {
+              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\features\\step-definitions\\conta-steps.js:7"
+            }
           },
           {
             "arguments": [],
             "keyword": "Quando ",
-            "name": "fornece <nome>",
+            "name": "fornece <name>",
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
-            "line": 12
+            "line": 12,
+            "match": {
+              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\features\\step-definitions\\conta-steps.js:11"
+            }
           },
           {
             "arguments": [],
@@ -49,47 +58,59 @@
             "keyword": "E ",
             "name": "fornece <tipo>",
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
-            "line": 14
+            "line": 14,
+            "match": {
+              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\features\\step-definitions\\conta-steps.js:19"
+            }
           },
           {
             "arguments": [],
             "keyword": "E ",
             "name": "fornece <email>",
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
-            "line": 15
+            "line": 15,
+            "match": {
+              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\features\\step-definitions\\conta-steps.js:23"
+            }
           },
           {
             "arguments": [],
             "keyword": "E ",
             "name": "fornece <password>",
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
-            "line": 16
+            "line": 16,
+            "match": {
+              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\features\\step-definitions\\conta-steps.js:27"
+            }
           },
           {
             "arguments": [],
             "keyword": "Então ",
             "name": "é exibida mnensagem \"Usuário cadastrado com sucesso\"",
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
-            "line": 17
+            "line": 17,
+            "match": {
+              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\features\\step-definitions\\conta-steps.js:31"
+            }
           },
           {
             "arguments": [],
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 4224924600
+              "duration": 3172502099
             },
             "hidden": true,
             "match": {
-              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
             }
           }
         ],
@@ -148,11 +169,11 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 3465940100
+              "duration": 3113923900
             },
             "hidden": true,
             "match": {
-              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
             }
           }
         ],
@@ -202,20 +223,23 @@
             "keyword": "Então ",
             "name": "é exibida mnensagem \"Campo obrigatório\"",
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
-            "line": 29
+            "line": 29,
+            "match": {
+              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\features\\step-definitions\\conta-steps.js:31"
+            }
           },
           {
             "arguments": [],
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 3446083400
+              "duration": 3116213199
             },
             "hidden": true,
             "match": {
-              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
             }
           }
         ],
@@ -238,7 +262,7 @@
         "line": 3
       }
     ],
-    "uri": "C:/Users/ASPIRE5/Documents/TAC/features/conta.feature"
+    "uri": "C:/Users/Rodrigo/Documents/TAC/features/conta.feature"
   },
   {
     "description": "  A fim de gerar relatório de avaliação de usabilidade\n  Como usuário Engenheiro de software\n  Eu quero gerar relatório de avaliação de usabilidade de software",
@@ -308,11 +332,11 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 3887857700
+              "duration": 3098295401
             },
             "hidden": true,
             "match": {
-              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
             }
           }
         ],
@@ -335,7 +359,7 @@
         "line": 3
       }
     ],
-    "uri": "C:/Users/ASPIRE5/Documents/TAC/features/gerar-relatorio.feature"
+    "uri": "C:/Users/Rodrigo/Documents/TAC/features/gerar-relatorio.feature"
   },
   {
     "description": "  As an internet user\n  In order to find out more about the itunes vote cards app\n  I want to be able to search for information about the itunes vote cards app",
@@ -352,11 +376,11 @@
             "name": "I search Google for \"Pontos turisticos em goiânia\"",
             "result": {
               "status": "passed",
-              "duration": 4271084600
+              "duration": 4249885601
             },
             "line": 8,
             "match": {
-              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\features\\step-definitions\\google-search-steps.js:17"
+              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\features\\step-definitions\\google-search-steps.js:17"
             }
           },
           {
@@ -365,11 +389,11 @@
             "name": "I should see some results",
             "result": {
               "status": "passed",
-              "duration": 782898700
+              "duration": 751385600
             },
             "line": 9,
             "match": {
-              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\features\\step-definitions\\google-search-steps.js:3"
+              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\features\\step-definitions\\google-search-steps.js:3"
             }
           },
           {
@@ -377,11 +401,11 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 1350650200
+              "duration": 486422499
             },
             "hidden": true,
             "match": {
-              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
             }
           }
         ],
@@ -405,11 +429,11 @@
             "name": "I type query as \"Teste\"",
             "result": {
               "status": "passed",
-              "duration": 4835182400
+              "duration": 3911330999
             },
             "line": 13,
             "match": {
-              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\features\\step-definitions\\google-search-steps.js:26"
+              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\features\\step-definitions\\google-search-steps.js:26"
             }
           },
           {
@@ -418,11 +442,11 @@
             "name": "I submit",
             "result": {
               "status": "passed",
-              "duration": 530103800
+              "duration": 725078001
             },
             "line": 14,
             "match": {
-              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\features\\step-definitions\\google-search-steps.js:35"
+              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\features\\step-definitions\\google-search-steps.js:35"
             }
           },
           {
@@ -430,11 +454,11 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 694486000
+              "duration": 467524400
             },
             "hidden": true,
             "match": {
-              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
             }
           }
         ],
@@ -457,7 +481,7 @@
         "line": 1
       }
     ],
-    "uri": "C:/Users/ASPIRE5/Documents/TAC/features/google-search.feature"
+    "uri": "C:/Users/Rodrigo/Documents/TAC/features/google-search.feature"
   },
   {
     "description": "  A fim de  logar na plataforma\n  Como usuario registrado\n  Eu quero Logar para ter acesso a criação e avaliação de usabilidade",
@@ -536,11 +560,11 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 4017408400
+              "duration": 3605946600
             },
             "hidden": true,
             "match": {
-              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
             }
           }
         ],
@@ -617,11 +641,11 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 4472460800
+              "duration": 3643799899
             },
             "hidden": true,
             "match": {
-              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
             }
           }
         ],
@@ -689,11 +713,11 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 4104695900
+              "duration": 3620445500
             },
             "hidden": true,
             "match": {
-              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
             }
           }
         ],
@@ -716,7 +740,7 @@
         "line": 3
       }
     ],
-    "uri": "C:/Users/ASPIRE5/Documents/TAC/features/login.feature"
+    "uri": "C:/Users/Rodrigo/Documents/TAC/features/login.feature"
   },
   {
     "description": "  A fim de  criar avaliação de usabilidade\n  Como usuário Engenheiro de Software\n  Eu quero criar avaliação de usabilidade de software",
@@ -795,11 +819,11 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 4123012500
+              "duration": 2605058701
             },
             "hidden": true,
             "match": {
-              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
             }
           }
         ],
@@ -822,7 +846,7 @@
         "line": 2
       }
     ],
-    "uri": "C:/Users/ASPIRE5/Documents/TAC/features/pesquisa.feature"
+    "uri": "C:/Users/Rodrigo/Documents/TAC/features/pesquisa.feature"
   },
   {
     "description": "  A fim de  preencher a avaliação de usabilidade de software\n  Como usuário logado\n  Eu quero preencher a avaliações de usabilidade de software",
@@ -883,11 +907,11 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 4122967000
+              "duration": 3622521100
             },
             "hidden": true,
             "match": {
-              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
             }
           }
         ],
@@ -910,6 +934,6 @@
         "line": 3
       }
     ],
-    "uri": "C:/Users/ASPIRE5/Documents/TAC/features/preencher-avaliacao.feature"
+    "uri": "C:/Users/Rodrigo/Documents/TAC/features/preencher-avaliacao.feature"
   }
 ]
