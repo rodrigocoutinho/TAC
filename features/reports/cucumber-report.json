@@ -13,92 +13,90 @@
             "keyword": "Dado ",
             "name": "que um usuário ainda não tem cadastro",
             "result": {
-              "status": "pending"
+              "status": "passed",
+              "duration": 5315053600
             },
             "line": 10,
             "match": {
-              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\features\\step-definitions\\conta-steps.js:2"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "name": "que o “Engenheiro de Software” não possui uma conta.",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 11,
-            "match": {
-              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\features\\step-definitions\\conta-steps.js:7"
+              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\features\\step-definitions\\conta-steps.js:4"
             }
           },
           {
             "arguments": [],
             "keyword": "Quando ",
-            "name": "fornece <name>",
+            "name": "fornece nome \"Rodrigo\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 241373800
+            },
+            "line": 11,
+            "match": {
+              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\features\\step-definitions\\conta-steps.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "name": "fornece telefone \"62-9999-9999\"",
+            "result": {
+              "status": "passed",
+              "duration": 215917100
             },
             "line": 12,
             "match": {
-              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\features\\step-definitions\\conta-steps.js:11"
+              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\features\\step-definitions\\conta-steps.js:16"
             }
           },
           {
             "arguments": [],
             "keyword": "E ",
-            "name": "fornece <fone>",
+            "name": "fornece tipo \"Engenheiro de Software\"",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 247845200
             },
-            "line": 13
+            "line": 13,
+            "match": {
+              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\features\\step-definitions\\conta-steps.js:24"
+            }
           },
           {
             "arguments": [],
             "keyword": "E ",
-            "name": "fornece <tipo>",
+            "name": "fornece email \"rodrigo@teste.com.br\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 181955500
             },
             "line": 14,
             "match": {
-              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\features\\step-definitions\\conta-steps.js:19"
+              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\features\\step-definitions\\conta-steps.js:32"
             }
           },
           {
             "arguments": [],
             "keyword": "E ",
-            "name": "fornece <email>",
+            "name": "fornece senha \"123\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 137778100
             },
             "line": 15,
             "match": {
-              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\features\\step-definitions\\conta-steps.js:23"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "name": "fornece <password>",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 16,
-            "match": {
-              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\features\\step-definitions\\conta-steps.js:27"
+              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\features\\step-definitions\\conta-steps.js:40"
             }
           },
           {
             "arguments": [],
             "keyword": "Então ",
-            "name": "é exibida mnensagem \"Usuário cadastrado com sucesso\"",
+            "name": "é exibida mensagem \"Usuário cadastrado com sucesso\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 288893800
             },
-            "line": 17,
+            "line": 16,
             "match": {
-              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\features\\step-definitions\\conta-steps.js:31"
+              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\features\\step-definitions\\conta-steps.js:48"
             }
           },
           {
@@ -106,11 +104,11 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 3172502099
+              "duration": 709940500
             },
             "hidden": true,
             "match": {
-              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
             }
           }
         ],
@@ -125,7 +123,7 @@
       {
         "id": "criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;conta-existente",
         "keyword": "Scenario",
-        "line": 19,
+        "line": 18,
         "name": "Conta Existente",
         "steps": [
           {
@@ -135,7 +133,7 @@
             "result": {
               "status": "undefined"
             },
-            "line": 20
+            "line": 19
           },
           {
             "arguments": [],
@@ -144,36 +142,39 @@
             "result": {
               "status": "undefined"
             },
-            "line": 21
+            "line": 20
           },
           {
             "arguments": [],
             "keyword": "E ",
-            "name": "<email> existente",
+            "name": "email existente",
             "result": {
               "status": "undefined"
             },
-            "line": 22
+            "line": 21
           },
           {
             "arguments": [],
             "keyword": "Então ",
             "name": "é exibida mensagem \"Usuário já é cadastrado.\"",
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
-            "line": 23
+            "line": 22,
+            "match": {
+              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\features\\step-definitions\\conta-steps.js:48"
+            }
           },
           {
             "arguments": [],
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 3113923900
+              "duration": 3579477400
             },
             "hidden": true,
             "match": {
-              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
             }
           }
         ],
@@ -188,7 +189,7 @@
       {
         "id": "criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;dados-ausentes",
         "keyword": "Scenario",
-        "line": 25,
+        "line": 24,
         "name": "Dados Ausentes",
         "steps": [
           {
@@ -198,7 +199,7 @@
             "result": {
               "status": "undefined"
             },
-            "line": 26
+            "line": 25
           },
           {
             "arguments": [],
@@ -207,7 +208,7 @@
             "result": {
               "status": "undefined"
             },
-            "line": 27
+            "line": 26
           },
           {
             "arguments": [],
@@ -216,30 +217,27 @@
             "result": {
               "status": "undefined"
             },
-            "line": 28
+            "line": 27
           },
           {
             "arguments": [],
             "keyword": "Então ",
             "name": "é exibida mnensagem \"Campo obrigatório\"",
             "result": {
-              "status": "skipped"
+              "status": "undefined"
             },
-            "line": 29,
-            "match": {
-              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\features\\step-definitions\\conta-steps.js:31"
-            }
+            "line": 28
           },
           {
             "arguments": [],
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 3116213199
+              "duration": 3760661500
             },
             "hidden": true,
             "match": {
-              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+              "location": "C:\\Users\\ASPIRE5\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
             }
           }
         ],
@@ -262,678 +260,6 @@
         "line": 3
       }
     ],
-    "uri": "C:/Users/Rodrigo/Documents/TAC/features/conta.feature"
-  },
-  {
-    "description": "  A fim de gerar relatório de avaliação de usabilidade\n  Como usuário Engenheiro de software\n  Eu quero gerar relatório de avaliação de usabilidade de software",
-    "elements": [
-      {
-        "id": "gerar-relatório-de-usabilidade;gerar-relatório",
-        "keyword": "Scenario",
-        "line": 9,
-        "name": "Gerar Relatório",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Dado ",
-            "name": "que o Engenheiro de Software tenha avaliação de usabilidade cadastrada.",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 10
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "name": "que esteja logado",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 11
-          },
-          {
-            "arguments": [],
-            "keyword": "Quando ",
-            "name": "a avaliação estiver finalizada",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 12
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "name": "o Engenheiro de Software clicar no botão Gerar relatório",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 13
-          },
-          {
-            "arguments": [],
-            "keyword": "Então ",
-            "name": "o relatório é gerado",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 14
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "name": "relatório é exibido",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 15
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 3098295401
-            },
-            "hidden": true,
-            "match": {
-              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@gerar_relatorio",
-            "line": 3
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "gerar-relatório-de-usabilidade",
-    "keyword": "Funcionalidade",
-    "line": 4,
-    "name": "Gerar relatório de usabilidade",
-    "tags": [
-      {
-        "name": "@gerar_relatorio",
-        "line": 3
-      }
-    ],
-    "uri": "C:/Users/Rodrigo/Documents/TAC/features/gerar-relatorio.feature"
-  },
-  {
-    "description": "  As an internet user\n  In order to find out more about the itunes vote cards app\n  I want to be able to search for information about the itunes vote cards app",
-    "elements": [
-      {
-        "id": "searching-for-vote-cards-app;google-search-for-vote-cards-app",
-        "keyword": "Scenario",
-        "line": 7,
-        "name": "Google search for vote cards app",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "I search Google for \"Pontos turisticos em goiânia\"",
-            "result": {
-              "status": "passed",
-              "duration": 4249885601
-            },
-            "line": 8,
-            "match": {
-              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\features\\step-definitions\\google-search-steps.js:17"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "I should see some results",
-            "result": {
-              "status": "passed",
-              "duration": 751385600
-            },
-            "line": 9,
-            "match": {
-              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\features\\step-definitions\\google-search-steps.js:3"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 486422499
-            },
-            "hidden": true,
-            "match": {
-              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@search",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "id": "searching-for-vote-cards-app;i-should-see-some-results",
-        "keyword": "Scenario",
-        "line": 12,
-        "name": "I should see some results",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "I type query as \"Teste\"",
-            "result": {
-              "status": "passed",
-              "duration": 3911330999
-            },
-            "line": 13,
-            "match": {
-              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\features\\step-definitions\\google-search-steps.js:26"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "I submit",
-            "result": {
-              "status": "passed",
-              "duration": 725078001
-            },
-            "line": 14,
-            "match": {
-              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\features\\step-definitions\\google-search-steps.js:35"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 467524400
-            },
-            "hidden": true,
-            "match": {
-              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@search",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "searching-for-vote-cards-app",
-    "keyword": "Feature",
-    "line": 2,
-    "name": "Searching for vote cards app",
-    "tags": [
-      {
-        "name": "@search",
-        "line": 1
-      }
-    ],
-    "uri": "C:/Users/Rodrigo/Documents/TAC/features/google-search.feature"
-  },
-  {
-    "description": "  A fim de  logar na plataforma\n  Como usuario registrado\n  Eu quero Logar para ter acesso a criação e avaliação de usabilidade",
-    "elements": [
-      {
-        "id": "logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-válido",
-        "keyword": "Scenario",
-        "line": 9,
-        "name": "Login válido",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Dado ",
-            "name": "que o Engenheiro de Software possui uma conta",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 10
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "name": "o usuário que forneça <email>",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 11
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "name": "forneça <password>",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 12
-          },
-          {
-            "arguments": [],
-            "keyword": "Quando ",
-            "name": "dados <email>",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 13
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "name": "<password> são válidos",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 14
-          },
-          {
-            "arguments": [],
-            "keyword": "Então ",
-            "name": "o sistema deve permitir a autenticação do usuário",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 15
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "name": "é exibida mensagem \"Usuario logado\"",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 16
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 3605946600
-            },
-            "hidden": true,
-            "match": {
-              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@login",
-            "line": 3
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "id": "logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-inválido",
-        "keyword": "Scenario",
-        "line": 18,
-        "name": "Login inválido",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Dado ",
-            "name": "que o Engenheiro de Software possui uma conta",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 19
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "name": "o usuário que forneça <email>",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 20
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "name": "forneça <password>",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 21
-          },
-          {
-            "arguments": [],
-            "keyword": "Quando ",
-            "name": "dados <email>",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 22
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "name": "<password> são inválidos",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 23
-          },
-          {
-            "arguments": [],
-            "keyword": "Então ",
-            "name": "exibir mensagem \"Usuário ou senha incorreta\"",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 24
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 3643799899
-            },
-            "hidden": true,
-            "match": {
-              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@login",
-            "line": 3
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "id": "logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-de-usuário-não-registrado",
-        "keyword": "Scenario",
-        "line": 26,
-        "name": "Login de usuário não registrado",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Dado ",
-            "name": "que o Engenheiro de Software possui uma conta",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 27
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "name": "o usuário que forneça <email>",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 28
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "name": "forneça <password>",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 29
-          },
-          {
-            "arguments": [],
-            "keyword": "Quando ",
-            "name": "dados <email> não é valido",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 30
-          },
-          {
-            "arguments": [],
-            "keyword": "Então ",
-            "name": "exibir mensagem \"Não registrado\"",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 31
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 3620445500
-            },
-            "hidden": true,
-            "match": {
-              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@login",
-            "line": 3
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "logar-na-plataforma-de-avaliação-de-usabilidade-de-software",
-    "keyword": "Funcionalidade",
-    "line": 4,
-    "name": "Logar na plataforma de avaliação de usabilidade de software",
-    "tags": [
-      {
-        "name": "@login",
-        "line": 3
-      }
-    ],
-    "uri": "C:/Users/Rodrigo/Documents/TAC/features/login.feature"
-  },
-  {
-    "description": "  A fim de  criar avaliação de usabilidade\n  Como usuário Engenheiro de Software\n  Eu quero criar avaliação de usabilidade de software",
-    "elements": [
-      {
-        "id": "criar-avaliação-de-usabilidade;criar-avaliação",
-        "keyword": "Scenario",
-        "line": 8,
-        "name": "Criar avaliação",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Dado ",
-            "name": "que o Engenheiro de Software tenha acesso a tela de login",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 9
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "name": "que um usuário esteja logado.",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 10
-          },
-          {
-            "arguments": [],
-            "keyword": "Quando ",
-            "name": "o <name> da avaliação é preenchido",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 11
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "name": "a <descricao> é preenchida",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 12
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "name": "o <tcle> é preenchido",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 13
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "name": "o <status> é preenchido",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 14
-          },
-          {
-            "arguments": [],
-            "keyword": "Então ",
-            "name": "a pesquisa é criada",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 15
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 2605058701
-            },
-            "hidden": true,
-            "match": {
-              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@pesquisa",
-            "line": 2
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "criar-avaliação-de-usabilidade",
-    "keyword": "Funcionalidade",
-    "line": 3,
-    "name": "Criar avaliação de usabilidade",
-    "tags": [
-      {
-        "name": "@pesquisa",
-        "line": 2
-      }
-    ],
-    "uri": "C:/Users/Rodrigo/Documents/TAC/features/pesquisa.feature"
-  },
-  {
-    "description": "  A fim de  preencher a avaliação de usabilidade de software\n  Como usuário logado\n  Eu quero preencher a avaliações de usabilidade de software",
-    "elements": [
-      {
-        "id": "preencher-avaliação;avaliar",
-        "keyword": "Scenario",
-        "line": 9,
-        "name": "Avaliar",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Dado ",
-            "name": "que o Usuário possua conta",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 10
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "name": "que esteja logado",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 11
-          },
-          {
-            "arguments": [],
-            "keyword": "Quando ",
-            "name": "as respostas estiverem preenchidas",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 12
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "name": "o usuário clica no botão enviar",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 13
-          },
-          {
-            "arguments": [],
-            "keyword": "Então ",
-            "name": "é exibida a mensagem \"Avaliação realizada com sucesso\"",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 14
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 3622521100
-            },
-            "hidden": true,
-            "match": {
-              "location": "C:\\Users\\Rodrigo\\Documents\\TAC\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@avaliar",
-            "line": 3
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "preencher-avaliação",
-    "keyword": "Funcionalidade",
-    "line": 4,
-    "name": "Preencher avaliação",
-    "tags": [
-      {
-        "name": "@avaliar",
-        "line": 3
-      }
-    ],
-    "uri": "C:/Users/Rodrigo/Documents/TAC/features/preencher-avaliacao.feature"
+    "uri": "C:/Users/ASPIRE5/Documents/TAC/features/conta.feature"
   }
 ]

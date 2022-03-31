@@ -87,7 +87,7 @@ export default function Register() {
 
                 <div className="form-group">
                     <label>Tipo de Usuario</label>
-                    <select value={tipo} onChange={e => setTipo(e.target.value)} >
+                    <select name="tipo" id="tipo "value={tipo} onChange={e => setTipo(e.target.value)} >
                         <option value="Usuario" >Usuario</option>
                         <option value="Engenheiro de Software">Engenheiro de Software</option>
                     </select>
@@ -125,6 +125,8 @@ export default function Register() {
             </div>
             <p />
             <button
+                id="signup"
+                name="signup"
                 type="submit"
                 className="btn btn-primary btn-block"
                 onClick={handleSubmit}>
@@ -132,7 +134,8 @@ export default function Register() {
             <p className="forgot-password text-right">
                 Already registered <a href="/login">sign in?</a>
             </p>
-            {error !== '' && (<p style={{ color: "#ff0000" }}>{error}</p>)}
+            <div id="mensagem">{error !== '' && (<p style={{ color: "#ff0000" }}>{error}</p>)}</div>
+            
         </form>
     );
 }

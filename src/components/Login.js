@@ -35,12 +35,12 @@ const Login = () => {
             <h3>Login</h3>
             <div className="form-group">
                 <label>E-mail</label>
-                <input type="email" value={user} onChange={e => setUser(e.target.value)} className="form-control" placeholder="Enter email" />
+                <input required id="email" type="email" value={user} onChange={e => setUser(e.target.value)} className="form-control" placeholder="Enter email" />
             </div>
             <p />
             <div className="form-group">
                 <label>Password</label>
-                <input type="password" value={password} onChange={e => setPassword(e.target.value)} className="form-control" placeholder="Enter password" />
+                <input required id="password" type="password" value={password} onChange={e => setPassword(e.target.value)} className="form-control" placeholder="Enter password" />
             </div>
             <p />
             <div className="form-group">
@@ -56,7 +56,10 @@ const Login = () => {
             <p className="forgot-password text-right">
                 Forgot <a href="#">password?</a>
             </p>
+            <div id="mensagem">
             {error !== '' && (<p style={{ color: "#ff0000" }}>{error}</p>)}
+            </div>
+            
         </form>
     );
 }
