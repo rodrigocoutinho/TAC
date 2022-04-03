@@ -24,10 +24,6 @@ AppRouter.post("/api/register", async (req, res) => {
     return res.status(422).json({ mensagem: "O telefone é obrigatório!" });
   }
 
-  if (!tipo) {
-    return res.status(422).json({ mensagem: "O Tipo de usuário é obrigatório!" });
-  }
-
   if (!email) {
     return res.status(422).json({ mensagem: "O email é obrigatório!" });
   }
@@ -94,13 +90,11 @@ AppRouter.post("/api/login", async (req, res) => {
       if (response) {
         const privateKey = 'private-key';
         const token = jwt.sign({ id: verifica[0].id }, privateKey, { expiresIn: '12h' });
-        res.send({ mensagem: "Usuario Logado", token: token })
-      } else {
-        res.status(400).send({ mensagem: "Usuário ou senha incorreta" })
+        res.status(200).send({ erro: false, mensagem: "Usuario Logado", token: token })
       }
     });
   } else {
-    res.status(400).send({ mensagem: "Não registrado" })
+    res.status(400).send({ mensagem: "Usuário ou senha incorreta" })
   }
 });
 

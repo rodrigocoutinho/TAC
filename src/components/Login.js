@@ -17,12 +17,16 @@ const Login = () => {
         try {
             const response = await api.post('/login', data);
             sessionStorage.setItem("token", response.data.token);
-            alert(response.data.mensagem);
-            window.location.href = "http://localhost:3000/painel";
+            //alert(response.data.mensagem);
+            setError(response.data.mensagem);
+            setTimeout(function(){
+                window.location.href = "http://localhost:3000/painel";
+            }, 1000);
+            
         } catch (error) {
             const { mensagem } = error.response.data;
             setError(mensagem);
-            alert(mensagem);
+            //alert(mensagem);
         }
     }
     function onSubmit(ev) {
@@ -50,15 +54,13 @@ const Login = () => {
                 </div>
                 <p />
             </div>
-            <button type="submit" onClick={handleLogin} className="btn btn-primary btn-block">Submit</button> &nbsp;&nbsp;&nbsp;
+            <button id="btn_entrar" name="btn_entrar" type="submit" onClick={handleLogin} className="btn btn-primary btn-block">Submit</button> &nbsp;&nbsp;&nbsp;
 
             <a href="/register">Register</a>
             <p className="forgot-password text-right">
                 Forgot <a href="#">password?</a>
             </p>
-            <div id="mensagem">
-            {error !== '' && (<p style={{ color: "#ff0000" }}>{error}</p>)}
-            </div>
+            <div id="mensagem" name="mensagem" value={error} > {error !== '' && (<p style={{ color: "#ff0000" }}>{error}</p>)} </div>
             
         </form>
     );

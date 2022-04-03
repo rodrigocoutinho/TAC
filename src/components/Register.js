@@ -28,7 +28,7 @@ export default function Register() {
             //Envio dos dados para api
             const response = await api.post('http://localhost:8080/api/register', data);
 
-            alert(response.data.mensagem);
+            //alert(response.data.mensagem);
             //Limpa os dados do formulário
             setName('');
             setFone('');
@@ -43,7 +43,7 @@ export default function Register() {
         } catch (error) {
             const { mensagem } = error.response.data;
             setError(mensagem);
-            alert(mensagem);
+            //alert(mensagem);
         }
     }
 
@@ -54,7 +54,7 @@ export default function Register() {
 
     return (
         <form onSubmit={onSubmit} >
-            <h3>Register</h3>
+            <h3 id="title3">Register</h3>
             <div className="form-group">
                 <label>Full name</label>
                 <input
@@ -134,7 +134,7 @@ export default function Register() {
             <p className="forgot-password text-right">
                 Already registered <a href="/login">sign in?</a>
             </p>
-            <div id="mensagem">{error !== '' && (<p style={{ color: "#ff0000" }}>{error}</p>)}</div>
+            <div  >{error !== '' && (<p id="mensagem" name="mensagem" value={error}style={{ color: "#ff0000" }}>{error}</p>)}</div>
             
         </form>
     );

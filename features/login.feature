@@ -7,25 +7,13 @@ Funcionalidade: Logar na plataforma de avaliação de usabilidade de software
   Eu quero Logar para ter acesso a criação e avaliação de usabilidade
 
     Cenário: Login válido
-        Dado que o Engenheiro de Software possui uma conta
-        E o usuário que forneça <email>
-        E forneça <password>
-        Quando  dados <email>
-        E <password> são válidos
-        Então o sistema deve permitir a autenticação do usuário
-        E é exibida mensagem "Usuario logado"
+        Dado que o Engenheiro de Software possui uma conta válida
+        Quando usuário fornece email válido "rodrigo@teste.com.br"
+        E forneça senha válida "123"
+        Então exibir a mensagem de sucesso "Usuario Logado"
 
     Cenário: Login inválido
-        Dado que o Engenheiro de Software possui uma conta
-        E o usuário que forneça <email>
-        E forneça <password>
-        Quando  dados <email>
-        E <password> são inválidos
-        Então exibir mensagem "Usuário ou senha incorreta"
-
-    Cenário: Login de usuário não registrado
-        Dado que o Engenheiro de Software possui uma conta
-        E o usuário que forneça <email>
-        E forneça <password>
-        Quando  dados <email> não é valido
-        Então exibir mensagem "Não registrado"
+        Dado que o Engenheiro de Software possui uma conta inválido
+        Quando usuário fornece email inválido "testando@teste.com.br"
+        E forneça senha inválida "teste"
+        Então exibir mensagem de falha "Usuário ou senha incorreta"
