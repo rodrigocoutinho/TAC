@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="criar-uma-conta-com-dados-ausentes-na-plataforma-de-avaliação-de-usabilidade-de-software;nome-ausente" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="@conta_com_dados_ausentes" value="true">
+            </property>
+            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/conta-dados-ausentes.feature">
+            </property>
+        </properties>
+        <testcase name="Dado que um usuário não preenche o nome para criação de conta" classname="criar-uma-conta-com-dados-ausentes-na-plataforma-de-avaliação-de-usabilidade-de-software;nome-ausente" time="0.0006111">
+        </testcase>
+        <testcase name="Quando campo obrigatório nome não é preenchido" classname="criar-uma-conta-com-dados-ausentes-na-plataforma-de-avaliação-de-usabilidade-de-software;nome-ausente" time="7.5011436">
+        </testcase>
+        <testcase name="Então é exibida mensagem de nome &quot;O nome é obrigatório!&quot;" classname="criar-uma-conta-com-dados-ausentes-na-plataforma-de-avaliação-de-usabilidade-de-software;nome-ausente" time="0.2579954">
+        </testcase>
+    </testsuite>
+    <testsuite name="criar-uma-conta-com-dados-ausentes-na-plataforma-de-avaliação-de-usabilidade-de-software;telefone-ausente" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="@conta_com_dados_ausentes" value="true">
+            </property>
+            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/conta-dados-ausentes.feature">
+            </property>
+        </properties>
+        <testcase name="Dado que um usuário não preenche o telefone para criação de conta" classname="criar-uma-conta-com-dados-ausentes-na-plataforma-de-avaliação-de-usabilidade-de-software;telefone-ausente" time="0.0004183">
+        </testcase>
+        <testcase name="Quando campo obrigatório telefone não é preenchido" classname="criar-uma-conta-com-dados-ausentes-na-plataforma-de-avaliação-de-usabilidade-de-software;telefone-ausente" time="4.7127424">
+        </testcase>
+        <testcase name="Então é exibida mensagem de telefone &quot;O telefone é obrigatório!&quot;" classname="criar-uma-conta-com-dados-ausentes-na-plataforma-de-avaliação-de-usabilidade-de-software;telefone-ausente" time="0.2559703">
+        </testcase>
+    </testsuite>
+    <testsuite name="criar-uma-conta-com-dados-ausentes-na-plataforma-de-avaliação-de-usabilidade-de-software;email-ausente" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="@conta_com_dados_ausentes" value="true">
+            </property>
+            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/conta-dados-ausentes.feature">
+            </property>
+        </properties>
+        <testcase name="Dado que um usuário não preenche o email para criação de conta" classname="criar-uma-conta-com-dados-ausentes-na-plataforma-de-avaliação-de-usabilidade-de-software;email-ausente" time="0.000869">
+        </testcase>
+        <testcase name="Quando campo obrigatório email não é preenchido" classname="criar-uma-conta-com-dados-ausentes-na-plataforma-de-avaliação-de-usabilidade-de-software;email-ausente" time="5.24133">
+        </testcase>
+        <testcase name="Então é exibida mensagem de email &quot;O email é obrigatório!&quot;" classname="criar-uma-conta-com-dados-ausentes-na-plataforma-de-avaliação-de-usabilidade-de-software;email-ausente" time="0.2399742">
+        </testcase>
+    </testsuite>
+    <testsuite name="criar-uma-conta-com-dados-ausentes-na-plataforma-de-avaliação-de-usabilidade-de-software;senha-ausente" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="@conta_com_dados_ausentes" value="true">
+            </property>
+            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/conta-dados-ausentes.feature">
+            </property>
+        </properties>
+        <testcase name="Dado que um usuário não preenche a senha para criação de conta" classname="criar-uma-conta-com-dados-ausentes-na-plataforma-de-avaliação-de-usabilidade-de-software;senha-ausente" time="0.0007579">
+        </testcase>
+        <testcase name="Quando campo obrigatório senha não é preenchido" classname="criar-uma-conta-com-dados-ausentes-na-plataforma-de-avaliação-de-usabilidade-de-software;senha-ausente" time="5.3875857">
+        </testcase>
+        <testcase name="Então é exibida mensagem de senha &quot;A senha é obrigatória!&quot;" classname="criar-uma-conta-com-dados-ausentes-na-plataforma-de-avaliação-de-usabilidade-de-software;senha-ausente" time="0.2578135">
+        </testcase>
+    </testsuite>
+    <testsuite name="criar-conta-existente-na-plataforma-de-avaliação-de-usabilidade-de-software;conta-existente" tests="7" failures="0" skipped="0">
+        <properties>
+            <property name="@contaexistente" value="true">
+            </property>
+            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/conta-existente.feature">
+            </property>
+        </properties>
+        <testcase name="Dado que um usuário que tem cadastro" classname="criar-conta-existente-na-plataforma-de-avaliação-de-usabilidade-de-software;conta-existente" time="0.0002869">
+        </testcase>
+        <testcase name="Quando fornece nome da conta existente &quot;Rodrigo&quot;" classname="criar-conta-existente-na-plataforma-de-avaliação-de-usabilidade-de-software;conta-existente" time="4.8977693">
+        </testcase>
+        <testcase name="E telefone da conta existente &quot;62-9999-9999&quot;" classname="criar-conta-existente-na-plataforma-de-avaliação-de-usabilidade-de-software;conta-existente" time="0.0699597">
+        </testcase>
+        <testcase name="E fornece tipo da conta existente &quot;Engenheiro de Software&quot;" classname="criar-conta-existente-na-plataforma-de-avaliação-de-usabilidade-de-software;conta-existente" time="0.0761703">
+        </testcase>
+        <testcase name="E fornece email da conta existente &quot;rodrigo@teste.com.br&quot;" classname="criar-conta-existente-na-plataforma-de-avaliação-de-usabilidade-de-software;conta-existente" time="0.0883756">
+        </testcase>
+        <testcase name="E fornece senha da conta existente &quot;123&quot;" classname="criar-conta-existente-na-plataforma-de-avaliação-de-usabilidade-de-software;conta-existente" time="0.0261354">
+        </testcase>
+        <testcase name="Então é exibida mensagem da conta existente &quot;Usuário já é cadastrado.&quot;" classname="criar-conta-existente-na-plataforma-de-avaliação-de-usabilidade-de-software;conta-existente" time="0.2576392">
+        </testcase>
+    </testsuite>
+    <testsuite name="criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;criar-conta-válida" tests="7" failures="1" skipped="0">
+        <properties>
+            <property name="@contavalida" value="true">
+            </property>
+            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/conta-valida.feature">
+            </property>
+        </properties>
+        <testcase name="Dado que um usuário ainda não tem cadastro" classname="criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;criar-conta-válida" time="0.0001744">
+        </testcase>
+        <testcase name="Quando fornece nome &quot;Rodrigo&quot;" classname="criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;criar-conta-válida" time="5.7389143">
+        </testcase>
+        <testcase name="E telefone &quot;62-9999-9999&quot;" classname="criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;criar-conta-válida" time="0.0358905">
+        </testcase>
+        <testcase name="E fornece tipo &quot;Engenheiro de Software&quot;" classname="criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;criar-conta-válida" time="0.0352401">
+        </testcase>
+        <testcase name="E fornece email &quot;rodrigo@teste.com.br&quot;" classname="criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;criar-conta-válida" time="0.0447746">
+        </testcase>
+        <testcase name="E fornece senha &quot;123&quot;" classname="criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;criar-conta-válida" time="0.013719">
+        </testcase>
+        <testcase name="Então é exibida mensagem de usuario cadastrado &quot;Usuário cadastrado com sucesso&quot;" classname="criar-conta-na-plataforma-de-avaliação-de-usabilidade-de-software;criar-conta-válida" time="0.2394898">
+            <failure message="AssertionError: expected &apos;Usuário já é cadastrado.&apos; to equal &apos;Usuário cadastrado com sucesso&apos;">AssertionError: expected &apos;Usuário já é cadastrado.&apos; to equal &apos;Usuário cadastrado com sucesso&apos;
+    at createWorld.&lt;anonymous&gt; (C:\Users\ASPIRE5\Documents\TAC\features\step-definitions\conta\conta-valida-steps.js:32:41)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="gerar-relatório-de-usabilidade;gerar-relatório" tests="6" failures="0" skipped="6">
+        <properties>
+            <property name="@gerar_relatorio" value="true">
+            </property>
+            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/gerar-relatorio.feature">
+            </property>
+        </properties>
+        <testcase name="Dado que o Engenheiro de Software tenha avaliação de usabilidade cadastrada." classname="gerar-relatório-de-usabilidade;gerar-relatório">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="E que esteja logado" classname="gerar-relatório-de-usabilidade;gerar-relatório">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Quando a avaliação estiver finalizada" classname="gerar-relatório-de-usabilidade;gerar-relatório">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="E o Engenheiro de Software clicar no botão Gerar relatório" classname="gerar-relatório-de-usabilidade;gerar-relatório">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Então o relatório é gerado" classname="gerar-relatório-de-usabilidade;gerar-relatório">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="E relatório é exibido" classname="gerar-relatório-de-usabilidade;gerar-relatório">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="searching-for-vote-cards-app;google-search-for-vote-cards-app" tests="2" failures="0" skipped="0">
+        <properties>
+            <property name="@search" value="true">
+            </property>
+            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/google-search.feature">
+            </property>
+        </properties>
+        <testcase name="When I search Google for &quot;Pontos turisticos em goiânia&quot;" classname="searching-for-vote-cards-app;google-search-for-vote-cards-app" time="6.9435527">
+        </testcase>
+        <testcase name="Then I should see some results" classname="searching-for-vote-cards-app;google-search-for-vote-cards-app" time="1.1114363">
+        </testcase>
+    </testsuite>
+    <testsuite name="searching-for-vote-cards-app;i-should-see-some-results" tests="2" failures="0" skipped="0">
+        <properties>
+            <property name="@search" value="true">
+            </property>
+            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/google-search.feature">
+            </property>
+        </properties>
+        <testcase name="When I type query as &quot;Teste&quot;" classname="searching-for-vote-cards-app;i-should-see-some-results" time="5.9673111">
+        </testcase>
+        <testcase name="Then I submit" classname="searching-for-vote-cards-app;i-should-see-some-results" time="0.614442">
+        </testcase>
+    </testsuite>
+    <testsuite name="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-válido" tests="4" failures="0" skipped="0">
+        <properties>
+            <property name="@login" value="true">
+            </property>
+            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/login.feature">
+            </property>
+        </properties>
+        <testcase name="Dado que o Engenheiro de Software possui uma conta válida" classname="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-válido" time="0.0001746">
+        </testcase>
+        <testcase name="Quando usuário fornece email válido &quot;rodrigo@teste.com.br&quot;" classname="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-válido" time="5.4821842">
+        </testcase>
+        <testcase name="E forneça senha válida &quot;123&quot;" classname="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-válido" time="0.0151081">
+        </testcase>
+        <testcase name="Então exibir a mensagem de sucesso &quot;Usuario Logado&quot;" classname="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-válido" time="0.2442986">
+        </testcase>
+    </testsuite>
+    <testsuite name="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-inválido" tests="4" failures="0" skipped="0">
+        <properties>
+            <property name="@login" value="true">
+            </property>
+            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/login.feature">
+            </property>
+        </properties>
+        <testcase name="Dado que o Engenheiro de Software possui uma conta inválido" classname="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-inválido" time="0.000185">
+        </testcase>
+        <testcase name="Quando usuário fornece email inválido &quot;testando@teste.com.br&quot;" classname="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-inválido" time="5.2036061">
+        </testcase>
+        <testcase name="E forneça senha inválida &quot;teste&quot;" classname="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-inválido" time="0.019586">
+        </testcase>
+        <testcase name="Então exibir mensagem de falha &quot;Usuário ou senha incorreta&quot;" classname="logar-na-plataforma-de-avaliação-de-usabilidade-de-software;login-inválido" time="0.2349049">
+        </testcase>
+    </testsuite>
+    <testsuite name="criar-avaliação-de-usabilidade;criar-avaliação" tests="9" failures="0" skipped="0">
+        <properties>
+            <property name="@pesquisa" value="true">
+            </property>
+            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/pesquisa.feature">
+            </property>
+        </properties>
+        <testcase name="Dado que o Engenheiro de Software tenha acesso a tela de login" classname="criar-avaliação-de-usabilidade;criar-avaliação" time="0.000762">
+        </testcase>
+        <testcase name="E que um usuário esteja logado" classname="criar-avaliação-de-usabilidade;criar-avaliação" time="5.1785168">
+        </testcase>
+        <testcase name="Quando Clica no botão de criação de pesquisa" classname="criar-avaliação-de-usabilidade;criar-avaliação" time="0.3994823">
+        </testcase>
+        <testcase name="E o nome da avaliação é preenchido &quot;Nome&quot;" classname="criar-avaliação-de-usabilidade;criar-avaliação" time="0.0003529">
+        </testcase>
+        <testcase name="E a descrição é preenchida &quot;Descrição&quot;" classname="criar-avaliação-de-usabilidade;criar-avaliação" time="0.0002974">
+        </testcase>
+        <testcase name="E o tcle é preenchido &quot;TCLE&quot;" classname="criar-avaliação-de-usabilidade;criar-avaliação" time="0.0003188">
+        </testcase>
+        <testcase name="E o status é preenchido &quot;Em andamento&quot;" classname="criar-avaliação-de-usabilidade;criar-avaliação" time="0.0003669">
+        </testcase>
+        <testcase name="E clica no botão salvar pesquisa" classname="criar-avaliação-de-usabilidade;criar-avaliação" time="0.230417">
+        </testcase>
+        <testcase name="Então a pesquisa é criada e exibida na tela &quot;Pesquisa cadastrada com sucesso!&quot;" classname="criar-avaliação-de-usabilidade;criar-avaliação" time="0.3400654">
+        </testcase>
+    </testsuite>
+    <testsuite name="preencher-avaliação;avaliar" tests="5" failures="0" skipped="5">
+        <properties>
+            <property name="@avaliar" value="true">
+            </property>
+            <property name="URI" value="C:/Users/ASPIRE5/Documents/TAC/features/preencher-avaliacao.feature">
+            </property>
+        </properties>
+        <testcase name="Dado que o Usuário possua conta" classname="preencher-avaliação;avaliar">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="E que esteja logado" classname="preencher-avaliação;avaliar">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Quando as respostas estiverem preenchidas" classname="preencher-avaliação;avaliar">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="E o usuário clica no botão enviar" classname="preencher-avaliação;avaliar">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Então é exibida a mensagem &quot;Avaliação realizada com sucesso&quot;" classname="preencher-avaliação;avaliar">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+</testsuites>
