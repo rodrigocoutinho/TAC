@@ -5,8 +5,11 @@ const Yup = require('yup');
 
 const User = require('./models/User');
 const PesquisaQuestao = require('./models/PesquisaQuestao');
+const PesquisaResposta = require('./models/PesquisaResposta');
 const Pesquisa = require('./models/Pesquisa');
 const authMiddleware = require('./middlewares/auth');
+
+const PesquisaDisponivelController = require("./controllers/PesquisaDisponivelController");
 
 const AppRouter = new Router();
 
@@ -106,11 +109,17 @@ AppRouter.get("/api/users", async (req, res) => {
   res.send(users);
 });
 
+AppRouter.get("/api/pesquisas/disponiveis", PesquisaDisponivelController.index);
+AppRouter.post("/api/pesquisas/disponiveis/:id", PesquisaDisponivelController.store);
+
 //Metodo get da api, onde será retornado a lista de pesquisas cadastradas no banco
 AppRouter.get("/api/pesquisas", async (req, res) => {
   const pesquisas = await Pesquisa.findAll({
     include: [{
-      model: PesquisaQuestao, as: "questoes"
+      model: PesquisaQuestao, as: "questoes",
+      include: [{
+        model: PesquisaResposta, as: "respostas"
+      }],
     }],
   });
   res.send(pesquisas);
@@ -213,6 +222,20 @@ AppRouter.post("/api/pesquisas/:id/perguntas", async (req, res) => {
   res.send(pergunta);
 });
 
+AppRouter.get("/api/pesquisas/:id", async (req, res) => {
+  const { id } = req.params;
+  const pesquisa = await Pesquisa.findByPk(id, {
+    include: [{
+      model: PesquisaQuestao, as: "questoes"
+    }],
+  });
+
+  if (!pesquisa) {
+    return res.status(400).json({ error: 'Pesquisa não encontrada' });
+  }
+
+  res.send(pesquisa);
+});
 
 
 module.exports = AppRouter;
