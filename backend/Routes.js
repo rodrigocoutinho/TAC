@@ -94,6 +94,8 @@ AppRouter.post("/api/login", async (req, res) => {
         const privateKey = 'private-key';
         const token = jwt.sign({ id: verifica[0].id }, privateKey, { expiresIn: '12h' });
         res.status(200).send({ erro: false, mensagem: "Usuario Logado", token: token })
+      }else{
+        res.status(400).send({erro: true, mensagem: "Usuário ou senha incorreta"})
       }
     });
   } else {
